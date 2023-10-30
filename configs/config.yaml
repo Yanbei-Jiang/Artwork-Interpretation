@@ -1,0 +1,25 @@
+read_local_data: True
+
+artpedia_root: 'data/Artpedia/images'
+bert_config: 'configs/config_bert.json'
+
+image_res: 336
+batch_size_train: 256
+vision_width: 1024
+distill: True
+clip_name: "ViT-L-14"
+batch_size_test: 256
+k_test: 128
+
+alpha: 0.4
+warm_up: True
+
+eos: '[SEP]'
+bos: '[CLS]'
+prompt: ''
+#optimizer: {opt: adamW, lr1: 1e-5, lr2: 5e-6, weight_decay: 0.02}
+#schedular: {sched: cosine, lr: 1e-5, epochs: 5, min_lr: 1e-6, decay_rate: 1, warmup_lr: 1e-5, warmup_epochs: 4, cooldown_epochs: 0}
+optimizer: {opt: adamW, lr1: 1e-4, lr2: 5e-5, weight_decay: 0.02}
+schedular: {sched: cosine, lr: 1e-4, epochs: 60, min_lr: 5e-5, decay_rate: 1, warmup_lr: 1e-4, warmup_epochs: 1, cooldown_epochs: 0}
+
+use_checkpoint: true
