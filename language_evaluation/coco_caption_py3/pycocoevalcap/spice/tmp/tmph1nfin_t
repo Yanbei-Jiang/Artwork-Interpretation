@@ -1,0 +1,2679 @@
+[
+  {
+    "image_id": 0,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the picture is of the virgin mother christ child and infant john the baptist one of many paintings by raphael with this trio"
+    ]
+  },
+  {
+    "image_id": 1,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the doshan tappeh street is a painting by the iranian realism painter kamal-ol-molk with oil on cotton duck",
+      "a lady in qajar-fashion is walking in the middle of work along the street"
+    ]
+  },
+  {
+    "image_id": 2,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting shows the martyrdom of saint matthew the evangelist author of the gospel of matthew",
+      "cardinal contarelli who had died several decades earlier had laid down very explicitly what was to be shown the saint being murdered by a soldier sent by the wicked king some suitable architecture and crowds of onlookers showing appropriate emotion"
+    ]
+  },
+  {
+    "image_id": 3,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "from the left to the middle is in the foreground a clash of knights occurred during the siege of the venetian town of asola by the troops of the austrian emperor maximilian i in 1516",
+      "among the clashing soldiers is the banner of asola the fortress itself being shown in the background",
+      "on the right is depicted to homage of the citizens of asola to the venetian provveditore -lrb- curator -rrb-"
+    ]
+  },
+  {
+    "image_id": 4,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the piece depicts a hand holding a reflective sphere",
+      "in the reflection most of the room around escher can be seen and the hand holding the sphere is revealed to be escher 's",
+      "in much of his self-portraiture of this type escher is in the act of drawing the sphere whereas in this image he is seated and gazing into it"
+    ]
+  },
+  {
+    "image_id": 5,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "apparition of the virgin of the pillar to saint james and his saragossan disciples is a 1768-69 painting by francisco de goya",
+      "it shows the virgin of the pillar apparition"
+    ]
+  },
+  {
+    "image_id": 6,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the painting depicts multiple buildings in the background one with umbrellas in front of it",
+      "in the foreground pierce painted boats in the potomac river dockside"
+    ]
+  },
+  {
+    "image_id": 7,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the painting is set on a sea shore and shows in the foreground an aged man with his back turned to the viewer walking towards two adults and two children on a hilltop overlooking a harbour",
+      "the figures are echoed by five ships shown in the harbour each at a different distance from the shore an allegorical reference to the different stages of human life to the end of a journey to the closeness of death",
+      "the aged man is the artist himself the small boy is his young son gustav adolf the young girl is his daughter agnes adelheid the older girl is his daughter emma and the man in the top hat is his nephew johann heinrich",
+      "the painting depicts a baltic sea port in the dusk",
+      "on the sea three sailing ships returning home can be seen the large ship in the middle has already begun to draw in its sails",
+      "two smaller sailboats have almost reached land",
+      "the one on the right heads directly for the group of five people on the bank who by their clothes are recognizable as townspeople",
+      "in their midst sits a boy who holds up a swedish pennant while the girl beside him reaches for it",
+      "to their right sits a woman who leans toward both children with her right hand raised",
+      "these five figures correspond to the five ships visible in the harbour beyond",
+      "the three groupings of figures -lrb- one aged man two adults and two children -rrb- echo the positioning of the ships at various distances from the shore as allegorical of the stages of life and closeness to death",
+      "the central ship is thought to represent the mother while further inshore two small boats references to the two children have only just begun their voyage and still remain in shallow clear water",
+      "to the horizon the farthest ship disappears into the setting horizon symbolizing the aged man 's voyage from this life into the unknown",
+      "the group forms a semicircle the children are on its farthest point to their left and right are a younger man and the young woman",
+      "on the extreme left an older man stands looking straight ahead outside the circle",
+      "the women and children are dressed for summer while the old man wears a coat and a fur hat",
+      "the bow of the big ship in the middle is exactly aligned with the two children"
+    ]
+  },
+  {
+    "image_id": 8,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the crowning with thorns is a painting by the italian painter michelangelo merisi da caravaggio"
+    ]
+  },
+  {
+    "image_id": 9,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the work depicts waves crashing over stark rock formations and along with roaring forties is one of two seascapes by waugh on display at the metropolitan museum of art"
+    ]
+  },
+  {
+    "image_id": 10,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the main dancer in the centre may be the leading actress charlotte desmares -lrb- the mistress of the duc d'orleans -rrb- whilst some identify the dancer in the black hat as the flemish painter nicolas vleughels a friend of watteau",
+      "these two dancers are shown dancing a minuet with other figures sitting in the background",
+      "these include a man courting a woman two women talking to an actor and a self-portrait of the painter as a musician holding a set of bagpipes these had had a sexual symbolism since the middle ages such as in hieronymus bosch 's the garden of earthly delights",
+      "behind this seated group are two more people and a fountain"
+    ]
+  },
+  {
+    "image_id": 11,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "a ruined castle stands on a high rocky hill to the right",
+      "in the left foreground a stream on whose rocky banks grow firs forms a waterfall and flows along the foot of the hill",
+      "a great fir stands on a bank some felled trees lie near",
+      "to the right are two houses amid trees at the foot of the castle-hill",
+      "in the left distance is a mountain"
+    ]
+  },
+  {
+    "image_id": 12,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "it shows david in his galante phase and was interpreted as a satire on the manners of the comte d'artois",
+      "the caryatids in the background are copies of those by jean goujon in the louvre"
+    ]
+  },
+  {
+    "image_id": 13,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "thousands of horse and foot soldiers immersed in a sea of spears and lances populate the foreground",
+      "the two armies are distinguished by their dress anachronistic though it is whereas alexander 's men clad themselves and their horses in full suits of heavy armour many of darius wear turbans and ride naked mounts",
+      "the bodies of the many fallen soldiers lie underfoot",
+      "a front of macedonian warriors in the centre pushes against the crumbling enemy force who flee the battlefield on the far left",
+      "the persian king joins his army on his chariot of three horses and is narrowly pursued by alexander and his uniformly attired companion cavalry",
+      "the tract of soldiers continues down the gently sloped battlefield to the campsite and cityscape by the water gravitating toward the mountainous rise at the scene 's centre",
+      "beyond is the mediterranean sea and the island of cyprus",
+      "the nile river meanders in the far distance emptying its seven arms into the mediterranean at the nile delta",
+      "a fierce sky caught in the dichotomy between the setting sun and the crescent moon dominates more than a third of the painting",
+      "the rain-heavy clouds swirling ominously around each celestial entity are separated by a gulf of calmness intensifying the contrast and infusing the heavens with an unearthly glow",
+      "light from the sky spills onto the landscape while the western continent and the nile are bathed in the sun 's light the east and the tower of babel are cloaked in shadow"
+    ]
+  },
+  {
+    "image_id": 14,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the painting depicts a beach in the melbourne suburb of mentone on a bright and sunny day",
+      "conder 's depiction of people engaged in seaside activities and the brilliant noonday sunshine mark the painting as distinctively australian in character"
+    ]
+  },
+  {
+    "image_id": 15,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "jerome is portrayed during his hermitage surrounded by all the symbols traditionally attributed to him the tamed lion the hat and the cardinal garments on the ground -lrb- a symbol of rejection of earthly honors -rrb- the book -lrb- jerome was a translator of the vulgate -rrb- the stone he used to hit himself and the crucifix for the prayers",
+      "the depiction of nature is typical of northern european art with numerous details such as the small birds the white butterfly in the lower part as well as the fine rendering of the trunk 's bark or the depiction of grass spear by spear",
+      "the sky in the background is similar to d\u00fcrer 's watercolor of the pool in the wood now in the british museum"
+    ]
+  },
+  {
+    "image_id": 16,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "a lady writing a letter and girl with a red hat -lrb- also attributed to vermeer -rrb-",
+      "the bluegreen jacket with the fur lining is also used in woman holding a balance and the concert and is listed as a oude groene false mantel met een witte bonte kant in vermeer 's inventory after his death"
+    ]
+  },
+  {
+    "image_id": 17,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "portrait of a humanist is a 1475-1480 oil on panel painting by giovanni bellini showing peter luder"
+    ]
+  },
+  {
+    "image_id": 18,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "his father is thus shown collapsed at the foot of the bed"
+    ]
+  },
+  {
+    "image_id": 19,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "it depicts three men examining a reproduction of the borghese gladiator a famous hellenistic statue discovered in italy"
+    ]
+  },
+  {
+    "image_id": 20,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the scene pivots around the child surrounded by mary 's arms with a group of shepherds on the left of which the bearded figure is portrayed in the same position of jerome in the madonna of st. jerome -lrb- correggio -rrb- -lrb- c. 1523 -rrb-",
+      "on the right are the traditional presepe animals and st. joseph",
+      "the upper left part features several angels reminiscent the ardite positions in correggio 's dome of the cathedral of parma executed in the same years"
+    ]
+  },
+  {
+    "image_id": 21,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "lady in white is an impressionist painting of a woman wearing a white robe from 1886 by dutch painter jan toorop"
+    ]
+  },
+  {
+    "image_id": 22,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it shows a woman commonly identified as goya 's maid companion and most likely lover leocadia weiss",
+      "she is dressed in a dark almost funeral maja dress and leans against what is either a mantelpiece or burial mound as she looks outward at the viewer with a sorrowful expression",
+      "the painting 's funereal air is established through the shading of the gray background the colouring of the model 's black veil and maja dress and her sad or nostalgic expression",
+      "she is positioned before an open blue sky with her body slightly leaning against a rock or mound",
+      "leocadia 's head rests on her forearm as she looks thoughtfully towards the viewer and is portrayed in a sympathetic manner",
+      "the work is illuminated by a yellow light falling on her face arm and chest",
+      "the background shows a blue and white sky emitting an ocher yellowish noon-light reminiscent of one of his final works the milkmaid of bordeaux"
+    ]
+  },
+  {
+    "image_id": 23,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it is one of the most recognizable of simberg 's works and was voted finland 's national painting in a vote held by the ateneum art museum in 2006 like other simberg works the atmosphere is melancholic the angelic central figure with her bandaged forehead and bloodied wing the sombre clothing of her two youthful bearers",
+      "the direct gaze of the right-hand figure touches the viewer",
+      "she clutches a bunch of snowdrops symbolic of healing and rebirth"
+    ]
+  },
+  {
+    "image_id": 24,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it depicts the virgin mary surrounded by angels and crowned with the circle of stars",
+      "she is shown trampling a snake representing her victory over the devil"
+    ]
+  },
+  {
+    "image_id": 25,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the upper register shows christ standing on a cloud in a contrapposto pose within a double mandorla and a ring of seraphim"
+    ]
+  },
+  {
+    "image_id": 26,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the rocket is a painting of a fireworks display over water in the fall of 1909 on the hudson river",
+      "in the middle of a radiant circle of light reflecting on the water a boat can be seen filled with people viewing the fireworks from the river"
+    ]
+  },
+  {
+    "image_id": 27,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "ingres stated that the painting showed a nude life-size female stretched out on a day-bed her head resting on her left arm which in turn rested on a cushion and the right arm behind the head"
+    ]
+  },
+  {
+    "image_id": 28,
+    "test": "the painting depicts a woman sitting on a couch in a room with a large window",
+    "refs": [
+      "black leaf on green background -lrb- 1952 -rrb- is a collage by henri matisse",
+      "black leaf on green background is an example of matisse 's final body of works known as the cutouts"
+    ]
+  },
+  {
+    "image_id": 29,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "bronzino shows the child half-length and sitting on a chair recalling the pose in his slightly earlier portrait of lucrezia panciatichi a rigid official pose offset by some hints of hand movement as if the character was about to get up along with an intense but emotionless gaze straight at the viewer",
+      "the face is lit and highlighted by the blue background whilst the cold light and absence of any strong chiaroscuro effect accentuates the smoothness of the subject 's complexion and idealises her features",
+      "her complexion is a pale white because bronzino painted the portrait using her death mask as a model",
+      "bia has her hair parted in the middle of her forehead and a falling bob with two carefully tied braids framing the face",
+      "she wears pearl earrings a gold chain with a pendant or medallion with her father 's profile on it emphasizing her bond with her father",
+      "she also wears a sumptuous dress made of blue satin with puffy sleeves produced in the silk factories cosimo was setting up in florence at the time",
+      "with her right hand she is fiddling with the end or tassel of a golden chain or belt around her waist"
+    ]
+  },
+  {
+    "image_id": 30,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "woman with a lute also known as woman with a lute",
+      "the painting depicts a young woman wearing an ermine-trimmed jacket and enormous pearl earrings as she eagerly looks out a window presumably expecting a male visitor",
+      "a musical courtship is suggested by the viola da gamba on the floor in the foreground and by the flow of songbooks across the tabletop and onto the floor according to a web page about the work at the metropolitan museum of art website"
+    ]
+  },
+  {
+    "image_id": 31,
+    "test": "the painting depicts a young woman sitting on a wooden bench in front of a window",
+    "refs": [
+      "the schoolmaster ichabod crane is fleeing on a white horse pursued by the headless horseman on a black horse",
+      "in one hand the headless horseman is holding a pumpkin which he is preparing to throw at crane",
+      "visible in the background is the old dutch church of sleepy hollow and the adjacent sleepy hollow cemetery and the full moon"
+    ]
+  },
+  {
+    "image_id": 32,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "thompson shows the regiment formed in a square in a field of rye withstanding attacks at approximately 17:00 from lancers and cuirassiers led by marshal ney"
+    ]
+  },
+  {
+    "image_id": 33,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the self-portrait is most remarkable because of its resemblance to many earlier representations of christ",
+      "its sombre mood is achieved through the use of brown tones set against the plain black background",
+      "however the work is not completely symmetrical his head is slightly right of centre his hair not quite in the middle the strands of hair fall differently on either side while his eyes look slightly to the left"
+    ]
+  },
+  {
+    "image_id": 34,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it depicts a group of people carrying crossbows in a room with a map on the back wall and birds hanging from the roof"
+    ]
+  },
+  {
+    "image_id": 35,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "it shows the discovery of erichthonius in a basket by one of the daughters of cecrops -lrb- either pandrosus or aglaulus -rrb-"
+    ]
+  },
+  {
+    "image_id": 36,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the panel depicts mary with the child on her womb subject of the adoration of the three magi",
+      "one of the latter with a flashing red mantle is kneeling in front of her his crown with fur edges lies on the ground next to him together with a container full of gold coins",
+      "joseph behind mary is perhaps pointing at them with an amazed expression",
+      "behind the first king are another one also kneeling and aged and a younger one standing with black skin",
+      "the former who has a hand on his chest while another is catching the gift wears a crown above a red velvet beret and has a fur-lined hood which partially hides a sword hilt",
+      "his garments are completed by a saddlebag decorated by two pearls and two daisies",
+      "the last king is already holding his gift he is also dressed sumptuously including the spurs and is accompanied by three servants",
+      "in the background are several shepherds including a bearded one with a fur hat decorated by feather who could be the artist 's self-portrait",
+      "all the characters glances converge on the baby jesus who instead looks towards the observer",
+      "symbolic details scattered in the picture include an iris flower at left and a small still life with a bowl a pot a wooden spoon and a piece of bread in a wall niche",
+      "at left is a landscape with the magi procession with several buildings and lake where grooms and horses are resting",
+      "another portion of landscape is in the middle part with two shepherds pointing at something an aged woman and a child the latter characters could be a reference to st. elizabeth and the young st. john the baptist visiting jesus",
+      "in the upper part are two pink and yellow drapes"
+    ]
+  },
+  {
+    "image_id": 37,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the large work measures approximately 96 by 200 inches -lrb- 2.4 m \u00d7 5.1 m -rrb- the painting depicts dealers selling horses at the horse market held on the boulevard de l\u2019h\u00f4pital paris",
+      "the notorious hospital of salp\u00eatri\u00e8re can be seen in the left background"
+    ]
+  },
+  {
+    "image_id": 38,
+    "test": "the painting depicts a scene from the life of thomas eakins",
+    "refs": [
+      "done in oil on canvas the work depicts a group of french farmers gathering potatoes such subject material was a common theme used by pissarro"
+    ]
+  },
+  {
+    "image_id": 39,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it shows diana and three of her nymphs refreshing themselves by a stream with the rabbits and birds they have just hunted piled to the left"
+    ]
+  },
+  {
+    "image_id": 40,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the lamb of god is an allusion to christ 's title as recorded in john 's gospel -lrb- john 1 29 -rrb- when john the baptist describes jesus as the lamb of god who takes away the sin of the world"
+    ]
+  },
+  {
+    "image_id": 41,
+    "test": "the painting depicts a scene from the life of peter paul",
+    "refs": [
+      "a foreground of fake terrain around the viewing gallery hides the base of the painting and makes the illusion more convincing"
+    ]
+  },
+  {
+    "image_id": 42,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it depicts the nude eve with a big serpent wrapped around her body",
+      "in the upper right corner is a bright field while the rest of the surroundings are dark"
+    ]
+  },
+  {
+    "image_id": 43,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "still life with a guitar is an early 20th century painting by spanish cubist juan gris"
+    ]
+  },
+  {
+    "image_id": 44,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "it depicts the moment towards the end of the battle of waterloo on 18 june 1815 when the commanders of the allied british and prussian armies the duke of wellington and marshal bl\u00fccher met near la belle alliance",
+      "at the centre of the painting is wellington soberly dressed in a plain uniform with cloak and fore-and-aft bicorn cocked hat holding a telescope and mounted on his horse copenhagen shaking hands with bl\u00fccher",
+      "a french eagle standard lies discarded beneath his horse 's feet",
+      "slightly left of centre bl\u00fccher is depicted wearing a forage cap -lrb- originally maclise portrayed him with a feathered cocked hat but later changed it -rrb- and is attended by his generals august ludwig von nostitz prince frederick of prussia august neidhardt von gneisenau hans ernst karl von zieten friedrich wilhelm freiherr von b\u00fclow and karl von grolman",
+      "to the left are two british cavalry officers colonel sir john ormsby vandeleur and major-general sir richard hussey vivian on a white horse with sloped sword",
+      "the scene is crowded with soldiers and other bystanders often in poses inspired by classical works or old master paintings or more contemporary models",
+      "the emphasis to dead and dying soldiers may be derived from antoine-jean gros 's 1809 painting napol\u00e9on on the battlefield of eylau",
+      "to the left is a broken artillery piece with some dead and wounded british and french soldiers piled up in a pyramidal composition reminiscent of th\u00e9odore gericault 's 1818-19 painting raft of the medusa",
+      "one soldier has a tourniquet around his arm and another 's wound is being dressed by a surgeon",
+      "behind them a prussian band are playing brass instruments accounts from the battle report that the band played god save the king at the meeting of wellington and bl\u00fccher to which the english replied with three cheers for the prussians",
+      "to the right a highland soldier from the black watch an english guardsman and an irish fusilier are carrying the body of major hon.",
+      "in the background a peasant woman is looting from the dead on the battlefield",
+      "in the background the army is advancing along a road"
+    ]
+  },
+  {
+    "image_id": 45,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "in the works sophie is typically shown on her deathbed accompanied by a dark-haired grieving woman assumed to be her aunt karen the studies often show her in a cropped head shot",
+      "in all the painted versions sophie is sitting in a chair obviously suffering from pain propped by a large white pillow looking towards an ominous curtain likely intended as a symbol of death",
+      "she is shown with a haunted expression clutching hands with a grief-stricken older woman who seems to want to comfort her but whose head is bowed as if she can not bear to look the younger girl in the eye"
+    ]
+  },
+  {
+    "image_id": 46,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "in this painting frida paints herself precisely her legs and feet lying in a bath of grey water"
+    ]
+  },
+  {
+    "image_id": 47,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the artist shows him in the uniform of the coldstream guards standing by his horse in a darkened corner of a forest",
+      "behind is a stormy sky and visible through the trees are the red jackets of the british referring to orme 's part in the british defeat at monongahela"
+    ]
+  },
+  {
+    "image_id": 48,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the young bull -lrb- dutch de jonge stier -rrb- or the bull -lrb- dutch de stier -rrb- is an oil painting of a bull by paulus potter",
+      "the village in the background is rijswijk between delft and the hague",
+      "the cow was a symbol of prosperity to the dutch hitherto overlooked in art and apart from the horse by far the most commonly shown animal in dutch golden age painting goats were used to indicate italy"
+    ]
+  },
+  {
+    "image_id": 49,
+    "test": "the painting depicts a group of people in a boat on a lake",
+    "refs": [
+      "the painting combining figures still-life and landscape in one work depicts a group of renoir 's friends relaxing on a balcony at the maison fournaise restaurant along the seine river in chatou france",
+      "the painter and art patron gustave caillebotte is seated in the lower right",
+      "renoir 's future wife aline charigot is in the foreground playing with a small dog an affenpinscher she replaced an earlier woman who sat for the painting but with whom renoir became annoyed",
+      "on the table is fruit and wine",
+      "the diagonal of the railing serves to demarcate the two halves of the composition one densely packed with figures the other all but empty save for the two figures of the proprietor 's daughter louise-alphonsine fournaise and her brother alphonse fournaise jr which are made prominent by this contrast",
+      "the main focus of light is coming from the large opening in the balcony beside the large singleted man in the hat",
+      "the singlets of both men in the foreground and the table-cloth all work together to reflect this light and send it through the whole composition"
+    ]
+  },
+  {
+    "image_id": 50,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting depicts the moment just before the consumption of forbidden fruit and the fall of man",
+      "adam and eve are depicted beneath the tree of the knowledge of good and evil where various fruits grow",
+      "on the opposite side the tree of life is depicted also laden with fruits",
+      "a monkey biting an apple to the left symbolizes sin",
+      "the sanguine monkey next to adam is the hotspur who can not resist temptation while the choleric cat near eve 's heels represents cruel cunning",
+      "in christian symbolism several grapes in the foliage behind adam and eve represent christ 's death on the cross as wine represents his blood"
+    ]
+  },
+  {
+    "image_id": 51,
+    "test": "the painting depicts a woman sitting on a bench in front of a window",
+    "refs": [
+      "the watercolor depicts carl larsson 's wife karin -lrb- born berg\u00f6\u00f6 -rrb- in the garden outside the home of lilla hyttn\u00e4s at sundborns\u00e5n in dalarna a sunny day",
+      "the watercolor was reproduced in carl larsson 's on the sunny side a book about the dwelling about children about you about flowers about everything outside the home which was published in 1910",
+      "here is lisbeth had just come back from england in tailor-made dress with an attached wreck of a hat"
+    ]
+  },
+  {
+    "image_id": 52,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the painting depicts the war that resulted from the roman abduction of the young sabine women in an effort to remedy the shortage of women in the newly founded city of rome"
+    ]
+  },
+  {
+    "image_id": 53,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting illustrates martyrdom and physical torment",
+      "the almost naked apostle bartholomew looks at us helplessly while a sadistic drunken executioner delightedly flays him",
+      "on the ground a classical sculpture which has been identified as the god baldach and in the background two priests their heads covered are witnesses to the torture"
+    ]
+  },
+  {
+    "image_id": 54,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "it shows anthony of padua with his standard attributes of a lily an open book and an image of the christ child",
+      "the cloudy background shows the heavy influence of michelangelo on the young artist whilst the fast brushstrokes show that of titian and tintoretto",
+      "on the edge of the book is the artist 's signature in mano di domenico in maiuscule greek characters"
+    ]
+  },
+  {
+    "image_id": 55,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "painted in 1888 in arles france it depicts autumnal scenes in the alyscamps an ancient roman necropolis in arles which is lined with poplars and stone sarcophagi"
+    ]
+  },
+  {
+    "image_id": 56,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the figures of the virgin mary the infant jesus and an infant john the baptist are shown in a calm grassy meadow linked by looks",
+      "mary is wearing a gold-bordered blue mantle set against a red dress extending her right leg along a diagonal",
+      "the blue symbolizes the church and the red christ 's death with the madonna touching hands with jesus the uniting of mother church with christ 's sacrifice"
+    ]
+  },
+  {
+    "image_id": 57,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the eruption of vesuvius is the name of several 1821 paintings by the norwegian artist johan christian dahl",
+      "he was one of the first to climb the mountain"
+    ]
+  },
+  {
+    "image_id": 58,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts thomas more in prison with his wife and daughter"
+    ]
+  },
+  {
+    "image_id": 59,
+    "test": "the painting depicts a group of people walking through a city square",
+    "refs": [
+      "pilgrimage depicts a procession headed by a group of eight more discernible people",
+      "one man wears clothing from the 17th century and carries a glass another is a monk or a nun",
+      "the left half of the painting with its bright sky is among the lighter passages of the black paintings which are dominated by browns greys and blacks"
+    ]
+  },
+  {
+    "image_id": 60,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts the battle of vigo bay fought by anglo-dutch and franco-spanish forces"
+    ]
+  },
+  {
+    "image_id": 61,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the scene is lorrain 's take on a famed event in book 5 of the aeneid in which the exiled women of troy spurred on by the hellenistic goddess juno burn the trojan fleet to force their men to stop roaming and settle in sicily",
+      "however aeneas prays to the god jupiter to save the ships from the flames by summoning a rainstorm this is eluded to by lorrain via his inclusion of dark clouds in the top right of the painting"
+    ]
+  },
+  {
+    "image_id": 62,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the cherubim are in blue and the seraphim in red whilst the painter has drawn on donatello 's example in showing mary incline her face towards her son"
+    ]
+  },
+  {
+    "image_id": 63,
+    "test": "the painting depicts a group of people standing in front of a window",
+    "refs": [
+      "madonna della consolazione",
+      "behind her on both sides are kneeling capuchin monks and above are two symmetrical praying angels drawn from the same cartoon used by perugino for his san francesco al prato resurrection madonna in glory with saints gonfalone della giustizia and other works",
+      "the deep landscape background with a town in the distance is typical of the artist"
+    ]
+  },
+  {
+    "image_id": 64,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "the bean eater -lrb- italian mangiafagioli -rrb- is a painting by the italian baroque painter annibale carracci"
+    ]
+  },
+  {
+    "image_id": 65,
+    "test": "the painting depicts a scene from the life of thomas eakins",
+    "refs": [
+      "the hussite sermon -lrb- german die hussitenpredigt -rrb- is a painting by the d\u00fcsseldorf-based painter carl friedrich lessing showing an open-air sermon being delivered by a hussite preacher in the 15th century"
+    ]
+  },
+  {
+    "image_id": 66,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it shows a woman with a millstone collar and diadem cap",
+      "she is seen almost in full face looking at the spectator",
+      "she is in black",
+      "dark background",
+      "the light falls from the left at top"
+    ]
+  },
+  {
+    "image_id": 67,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the madonna is portrayed on a luminous landscape of hills on a high throne in front of her is a pedestal with on it a mystic vase and featuring the signature and date which were always added by perugino when the painting was produced in his workshop and then shipped to the destination",
+      "at the sides are the saints john the baptist -lrb- with a camel skin and a stick with the cross -rrb- louis of toulouse who wears a bishop dress francis of assisi -lrb- reading -rrb- peter with the keys of heaven paul -lrb- with a long beard and a red vest -rrb- and mary magdalene with offerings to the madonna"
+    ]
+  },
+  {
+    "image_id": 68,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it shows two flying figures hovering over a landscape dominated by a large tabled mountain",
+      "two figures one male and one female are shown airborne hovering above a broad landscape",
+      "the woman wears a white dress covered by a red-rose coloured robe",
+      "both seem fearful she covers the lower half of her face with her robe his face is deeply disturbed",
+      "they are each looking in opposite directions while he points to a town on top of a mountain on the right of the canvas",
+      "critic evan connell notes that the mountain 's shape resembles gibraltar a refuge for spanish liberals during the aftermath of the peninsular war",
+      "in the foreground a row of french soldiers resembling those from goya 's 1814",
+      "the third of may 1808 take aim at a group of people passing in the lower distance",
+      "this group is traveling with horses and wagons and are perhaps refugees fleeing from the earlier war with france the victims of whom goya had detailed so closely in his the disasters of war writer richard cottrell has noted the similarity in the colouring of the livid sky with another work from the black painting series the dog",
+      "in this case the robe of the male flyer brings him almost out of the canvas and much closer to the viewer than the female flyer"
+    ]
+  },
+  {
+    "image_id": 69,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "children teaching a cat to dance or the dancing lesson is a c. 1660 1679 oil on panel painting by jan steen now in the rijksmuseum in amsterdam"
+    ]
+  },
+  {
+    "image_id": 70,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "the painting is of several young men smoking cigarettes and drinking beer",
+      "the person depicted at right -lrb- in black and white apparel -rrb- is painter jan de heem"
+    ]
+  },
+  {
+    "image_id": 71,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "miss bentham is a 1906 oil painting by the american artist george bellows depicting a full length standing nude woman from the rear"
+    ]
+  },
+  {
+    "image_id": 72,
+    "test": "the painting depicts a scene from the biblical story of jesus christ the first king of mankind",
+    "refs": [
+      "the madonna occupies a central position inside a pyramidal composition",
+      "the child is held up to be seen by the magi and the other spectators",
+      "two magi are positioned at the base of the composition one kisses the child 's foot and another kneels with his hand on his chest",
+      "a third magus stands on the left wearing a yellow and red cloak gifting a richly decorated chalice",
+      "at their sides crouched are st. john the baptist who looks at the viewer and -lrb- in keeping with the contemporary theme -rrb- points to the child and st. john the evangelist who is presenting a wounded child",
+      "another child in a hint to the orphans -lrb- innocenti -rrb- cared by the hospital is at the opposite end",
+      "they are also referred to by the scene of the massacre of the innocents represented in the left background",
+      "the traditional ox and donkey surround the virgin together with st. joseph",
+      "the hut includes an unfinished brick wall a symbol of the decline of paganism to be replaced by christianism",
+      "the ceiling is supported by four columns decorated with candelabra and gilt corinthian capitals",
+      "above it four angels hold a cartouche with a tetragram with the notes and the first words of the gloria",
+      "ghirlandaio painted in the left foreground a series of characters among which are the donor -lrb- dressing in black -rrb- and the artist himself who looks towards the viewer",
+      "on the right in the magi procession are three richly donned men which have been identified as major members of the arte della seta -lrb- guild of the silk workers -rrb- the main financial backer of the hospital",
+      "above them the procession continues in the far background passing under an arch -lrb- with the date mcccclxxxviii or 1488 -rrb- another possible symbol of the fall of the transition between paganism and christianism",
+      "the five horses were painted starting from only two cartoons adding some small variants in the heads",
+      "the same sector of the background depicts the annunciation to the shepherds by a flying angel",
+      "finally painted above a lake landscape with ships among hills and mountains a layman and a clerk observe the scene they symbolize the main institutions backing the orphanage",
+      "the city in the left background is a symbolic representation of rome edifices include the colosseum trajan 's column the torre delle milizie and the pyramid of cestius"
+    ]
+  },
+  {
+    "image_id": 73,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "infanta margarita teresa in a blue dress is one of the best known portraits by spanish painter diego vel\u00e1zquez",
+      "it shows margaret theresa of spain who also appears in the artist 's las meninas",
+      "the infanta here eight years old is shown with a solemn expression",
+      "she wears a blue silk dress which is adorned with silver borders after the spanish fashion of the era the most striking characteristic is the huge expanse of the voluminous crinoline which is accentuated by the trimmed borders and the wide lace collar",
+      "in one of her hands she holds a brown fur muff perhaps a present from vienna",
+      "the young girl who is presented as pretty and appealing has a pale countenance which is enhanced by the blue and silver tones",
+      "in the background there is a high console table with a round mirror behind it"
+    ]
+  },
+  {
+    "image_id": 74,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the painting portrays domestic architecture typical of de hooch 's middle period with building and courtyard dominating people",
+      "the scene is divided into two pieces",
+      "to the left an archway of brick and stone leads from a paved courtyard a passageway though a house where a woman dressed in black and red stands looking away to the street beyond",
+      "a stone tablet above the doorway was originally over the entrance of the hieronymusdale cloister in delft",
+      "when the cloister was suppressed this tablet was removed but can still be seen set into the wall of a garden behind the canal",
+      "to the right is a vine growing over a wooden structure with an open door through the brick wall to the far right and a woman dressed in white and blue leading a child down steps to the courtyard",
+      "the woman is carrying a dish in her other hand and a bucket and a broom have been left in the courtyard",
+      "the brickwork of the wall on the right is dilapidated compared to the house on the left there is an interesting double perspective that differentiates the two halves that are divided by the right edge of the archway and building above",
+      "nature is making incursions to the well swept courtyard from the plant border on the right including the shrub above the couple 's head and the vine obscuring the stone tablet"
+    ]
+  },
+  {
+    "image_id": 75,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "it describes a roman rite of worship conducted in honour of the goddess venus each 1 april",
+      "on this occasion women would make offerings to representations of the goddess so as to cleanse every blemish on their bodies in titian 's work two nymphs one young and one matronly are situated to the right of the ceremony attending to a shrine holding a representation of venus",
+      "the shrine is surrounded by votive tablets",
+      "the older woman checks on the decorations with the use of a mirror which she holds high in her extended right hand",
+      "the foreground of the canvas is thronged with a swarm of male infants or putti who distract themselves in activities such as climbing trees leaping flying gathering apples lying around fighting fondling shooting arrows and pulling each other 's hair",
+      "a dam is shown in the middle background near a sunlit meadow",
+      "the far distance is decorated with a mountain and blue sky",
+      "they have hung their quivers on the apple trees and in the grass lie their broidered mantles"
+    ]
+  },
+  {
+    "image_id": 76,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "this symbolist painting in pastel blues and pale flesh tones depicts a beautiful female nude reclining next to an assortment of flowers and holding to her lips a small spray of two rosebuds"
+    ]
+  },
+  {
+    "image_id": 77,
+    "test": "the painting depicts a woman in a red dress standing in front of a window",
+    "refs": [
+      "portrait of ambroise vollard in a red headscarf"
+    ]
+  },
+  {
+    "image_id": 78,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the pope is depicted with the weight of late middle age while his sight appears to be strained",
+      "the pommel on top of the pope 's chair evokes the symbolic abacus balls of the medici family while the illuminated bible open on the table has been identified as the hamilton bible",
+      "the cardinals are usually identified as giulio di giuliano de medici and luigi de rossi"
+    ]
+  },
+  {
+    "image_id": 79,
+    "test": "the painting depicts a woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting depicts salome dressed in expensive clothes and a rich fur laying a golden scepter in her left hand"
+    ]
+  },
+  {
+    "image_id": 80,
+    "test": "the painting depicts a shipwrecked shipwrecked shipwrecked shipwrecked shipwrecked shipwrecked shipwrecked shipwrecked shipwrecked",
+    "refs": [
+      "shipwreck on the norwegian coast or shipwreck on the coast of norway -lrb- norwegian skibbrudd ved den norske kyst -rrb- is an 1832 marine painting by johan christian dahl"
+    ]
+  },
+  {
+    "image_id": 81,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "boy with a basket of fruit c. 1593 is a painting generally ascribed to italian baroque master michelangelo merisi da caravaggio currently in the galleria borghese rome",
+      "at one level the painting is a genre piece designed to demonstrate the artist 's ability to depict everything from the skin of the boy to the skin of a peach from the folds of the robe to the weave of the basket",
+      "the fruit is especially exquisite and professor jules janick of the department of horticulture and landscape architecture at purdue university indiana has analysed them from a horticulturalist 's perspective the basket contains a great many fruits all in nearly perfect condition and including a bi-colored peach with a bright red blush four clusters of grapes two black one red and one white a ripe pomegranate split open disgorging its red seeds four figs two of them dead-ripe black ones both split and two light-colored two medlars three apples two red one blushed and the other striped and one yellow with a russet basin and a scar two branches with small pears one of them with five yellow ones with a bright red cheek and the other half-hidden with small yellow blushed fruits",
+      "there are also leaves showing various disorders a prominent virescent grape leaf with fungal spots and another with a white insect egg mass resembling that of the oblique banded leaf roller -lrb- choristoneura rosaceana -rrb- and peach leaves with various spots"
+    ]
+  },
+  {
+    "image_id": 82,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting depicts the struggle of hannibal 's soldiers to cross the maritime alps in 218bc opposed by the forces of nature and local tribes",
+      "a curving black storm cloud dominates the sky poised to descend on the soldiers in the valley below with an orange-yellow sun attempting to break through the clouds",
+      "a white avalanche cascades down the mountain to the right",
+      "the large animal is dwarfed by the storm and the landscape with the sunlit plains of italy opening up beyond",
+      "in the foreground salassian tribesmen are fighting hannibal 's rearguard confrontations that are described in the histories of polybius and livy"
+    ]
+  },
+  {
+    "image_id": 83,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "done in oil on canvas by french artist ernest meissonier the painting depicts a soldier playing a theorbo",
+      "the painting 's central figure is a jovial soldier playing a theorbo a stringed instrument popular during the heyday of baroque music in the 17th century"
+    ]
+  },
+  {
+    "image_id": 84,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the work shows the mythological hero perseus killing the monster who had entrapped andromeda",
+      "piero focused on attention to detail in the background perhaps inspired by the contemporary flemish school",
+      "details include the two characters with a turban on the left the water on the shore and the fantastic musical instruments"
+    ]
+  },
+  {
+    "image_id": 85,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "it shows hortensio f\u00e9lix paravicino a monk of the trinitarian order and major spanish poet who was also a close friend of the painter",
+      "he is shown in the trinitarian habit"
+    ]
+  },
+  {
+    "image_id": 86,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "it shows the death of chione lover of both hermes and apollo she had compared her beauty to that of apollo 's sister artemis who hunted her down and killed her by shooting an arrow through her tongue"
+    ]
+  },
+  {
+    "image_id": 87,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the work executed in a style consistent with other works by metzinger created between 1905 and 1907 such as two nudes in an exotic landscape is a portrait of an elegant women gazing self-assuredly directly at the spectator wearing a fashionable wide-brimmed hat with a large green-bleu bow tied in a simple knot",
+      "while the face of the sitter is treated with natural colors the rest of the canvas appears treated with more artificial tints tones hues and shades"
+    ]
+  },
+  {
+    "image_id": 88,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "a courtyard with two cavaliers and a woman drinking",
+      "a view in a courtyard at the end of which an open door with two steps leads into the garden at the back the trees in which rise above the low wall",
+      "in the left foreground a man who is smoking a pipe sits in profile to the right he wears a black coat a grey cloak and a black hat",
+      "to the right opposite him at the table stands a woman drinking a glass of beer she wears a yellowish-grey jacket a red skirt and a blue apron",
+      "behind the table and between the man and woman sits another man wearing a cuirass and a hat who faces the spectator he holds a mug in his hand and looks up with a smile at the woman",
+      "from the right a little girl holding a pot comes across the courtyard",
+      "in the left background is seen the tower of the nieuwe kerk at delft"
+    ]
+  },
+  {
+    "image_id": 89,
+    "test": "the painting depicts a group of people in a boat on the sea",
+    "refs": [
+      "it depicts an inside view of an open attic window as the wind blows the thin and tattered curtains into the room"
+    ]
+  },
+  {
+    "image_id": 90,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts the french marshal michel ney right after his execution on 7 december 1815 with the firing squad seen walking from the site",
+      "on the wall behind ney 's corpse are two inscriptions one that says vive l'empereur -lrb- long live the emperor -rrb- and is crossed out and one that says vive right before the bullet holes from the execution"
+    ]
+  },
+  {
+    "image_id": 91,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it is a genre painting showing a quiet domestic scene from the time like most of de hooch 's works",
+      "in the right-hand corner of a room sits a woman facing the spectator",
+      "she wears a black velvet jacket trimmed with fur a red skirt and a white apron",
+      "in her lap she holds a basket of apples which she is peeling",
+      "she holds out a long rind in her right hand to a little girl standing to the left and seen in profile",
+      "a tub is on the floor at the woman 's feet",
+      "to the left is a fireplace with a kettle on the fire",
+      "the fireplace is lined with delft tiles and is enclosed with pilasters worked in low relief",
+      "behind the woman hangs a mirror in a black frame",
+      "the sunlight enters through a window above to the right and illumines the wall and a corner of the mirror",
+      "the floor is composed of brown and white tiles"
+    ]
+  },
+  {
+    "image_id": 92,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the assassination of the duke of guise is a painting by paul delaroche",
+      "it shows henry i duke of guise 's assassination by henry iii 's royal guard on 23 december 1588"
+    ]
+  },
+  {
+    "image_id": 93,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "it is his second depiction after circe offering the cup to ulysses -lrb- 1891 -rrb- of the greek mythological character circe this time while she is poisoning the water to turn scylla circe 's rival for glaucus into a hideous monster"
+    ]
+  },
+  {
+    "image_id": 94,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "it depicts the expulsion of adam and eve from the garden of eden from the biblical book of genesis chapter 3 albeit with a few differences from the canonical account"
+    ]
+  },
+  {
+    "image_id": 95,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "it shows an astronomer at a table on which are terrestrial and celestial globes on the table"
+    ]
+  },
+  {
+    "image_id": 96,
+    "test": "the painting depicts a young man sitting at a table and reading a newspaper",
+    "refs": [
+      "portrait of a man -lrb- self portrait -rrb-",
+      "the man is not as it is commonly thought wearing a turban but a chaperon with the ends that normally hang down tied up over the top which would be a sensible precaution if it was worn whilst painting",
+      "his weary facial expression is achieved through a combination of his strong nose tightly pursed by wide mouth and the framing of his face by the headdress",
+      "the veins are painted in vermilion into the wet scumble",
+      "the iris is ultra-marine fairly pure at its circumference but mixed with white and black towards the pupil",
+      "there are black flecks near the circumference and the pupil is painted in black over the blue of the iris"
+    ]
+  },
+  {
+    "image_id": 97,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it shows the head of a dog gazing upwards",
+      "the dog itself is almost lost in the vastness of the rest of the image which is empty except for a dark sloping area near the bottom of the picture an unidentifiable mass which conceals the animal 's body"
+    ]
+  },
+  {
+    "image_id": 98,
+    "test": "the painting depicts a group of young women playing cards",
+    "refs": [
+      "this work painted at the outset of 1912 represents a series of naked elegant women at various points in the landscape foreground their reflections along with the blue of the sky echoing off the water at the lower edge of the canvas",
+      "beyond the bathers can be observed protruding rock-like formations or boulders with highlights of primary color that appear to espouse elements of the foreground",
+      "above these cliffs are found several deciduous woody plants of the genus populus"
+    ]
+  },
+  {
+    "image_id": 99,
+    "test": "the painting depicts a woman sitting on a couch in front of a window",
+    "refs": [
+      "it was the first of his pictures of single female figures and established the style that was later to become a signature of his work"
+    ]
+  },
+  {
+    "image_id": 100,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "it seems that members of the roulin family are depicted in this portrait and the woman in arl\u00e9sienne costume has the profile of madame ginoux",
+      "the victorious matador circles the arena displaying this prize to the crowd before presenting it to a lady of his choice"
+    ]
+  },
+  {
+    "image_id": 101,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the man is portrayed with black garments aside from the white shirt under the jacket",
+      "his hands which according to the flemish painting tradition are lying on the lower border hold a cartouche where it is perhaps written his address"
+    ]
+  },
+  {
+    "image_id": 102,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting shows a girl -lrb- the elder sister -rrb- sitting on a rock and holding a sleeping baby -lrb- the younger brother -rrb- on her lap with a quiet rural landscape behind them",
+      "the beauty of the girl and her eyes which are looking directly at the viewer as well the balance of the composition including positioning of the legs and arms of the children demonstrate bouguereau 's academic painting style"
+    ]
+  },
+  {
+    "image_id": 103,
+    "test": "in the foreground a woman in a red dress stands in front of a window",
+    "refs": [
+      "the painting depicts the dead body of a woman washed up beneath the arch of waterloo bridge with her lower body still immersed in the water of the river thames",
+      "she is presumed to have drowned after having thrown herself in the river in despair to escape the shame of being a fallen woman",
+      "the grey industrial cityscape of the south bank of the thames is barely visible in the background through thick smog",
+      "dressed simply perhaps a servant her arms and body form the shape of a cross",
+      "she holds a locket and chain in one hand indicating her attachment to her lover with a single star visible as a sign of hope in the sky above"
+    ]
+  },
+  {
+    "image_id": 104,
+    "test": "the painting depicts a group of people in a rural setting",
+    "refs": [
+      "the distribution of the eagle standards is an 1810 painting by jacques-louis david depicting a ceremony arranged by napoleon after his assumption of power as emperor",
+      "the final painting depicted the moment when napoleon blessed the standards being held out towards him",
+      "napoleon has his arm raised in imitation of ancient adlocutio scenes which depict classical heroes addressing troops"
+    ]
+  },
+  {
+    "image_id": 105,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the oval painting depicts a half-bust of the eremitic early christian monk st anthony abbot",
+      "he is reading a book and on his shoulder leans his staff with a bell",
+      "the elderly man is dressed in a sober dark cloak with hood setting apart his white beard"
+    ]
+  },
+  {
+    "image_id": 106,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the work represents a nude woman in a composition that contains a wide variety of exotic geometrized elements",
+      "her body is depicted nude seen from the front with yellow and white highlights and turquoise reflections the mythological reference serving as pretext for the nude"
+    ]
+  },
+  {
+    "image_id": 107,
+    "test": "the painting depicts a group of people in a rural setting",
+    "refs": [
+      "titian looks remote aged and gaunt staring into the middle distance seemingly lost in thought",
+      "yet the portrait projects dignity authority and the mark of a master painter",
+      "titian is dressed in simple but expensive clothes",
+      "in the lower left corner of the canvas he holds a paintbrush",
+      "the portrait is composed of deep shades of rich and distinguished black and brown with small touches of white around his face and hair and on his neckline and chain"
+    ]
+  },
+  {
+    "image_id": 108,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "though situated like any deathbed portrait the dying man is not looking piously towards the heavens but into a mirror while surrounded by mourners",
+      "a man crying into a handkerchief behind him is looking away while three women attend to the body",
+      "the meaning of the blackened mirror is ambiguous title seems to suggest that the dying man 's last thought was for his appearance possibly meant as a parody of the deathbed portrait as a genre"
+    ]
+  },
+  {
+    "image_id": 109,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "van dyck inverted the composition and showed delilah in white chalk make-up and heavily rouged cheeks the makeup traditionally worn by parisian prostitutes"
+    ]
+  },
+  {
+    "image_id": 110,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the ceiling is that of the sistine chapel the large papal chapel built within the vatican between 1477 and 1480 by pope sixtus iv for whom the chapel is named",
+      "the complex design includes several sets of individual figures both clothed and nude which allowed michelangelo to fully demonstrate his skill in creating a huge variety of poses for the human figure and which have provided an enormously influential pattern book of models for other artists ever since"
+    ]
+  },
+  {
+    "image_id": 111,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "first steps -lrb- german erste schritte greek",
+      "the scene is set in a bavarian village home interior bathed in the light pouring through the open window",
+      "dressed in dark cherry tones the grandmother is holding the blond baby full of courage and smiling taking its first steps in the world on top of a wooden table",
+      "the grandmother has left her red knitwear in a corner",
+      "the baby 's elder sister seated with her back towards the foreground is waiting to receive the baby with her arms open in a protective gesture",
+      "the painting shows in the second version a grandmother helping her granddaughter for her first steps",
+      "it also features an elder sister watching her younger sister 's first steps"
+    ]
+  },
+  {
+    "image_id": 112,
+    "test": "the painting depicts a group of college students gathered around a table",
+    "refs": [
+      "the cornell farm -lrb- 1848 -rrb- is an oil on canvas landscape by edward hicks",
+      "the picture depicts the farmland and cattle of pennsylvanian james cornell",
+      "the horizontal band of livestock across the foreground although childlike in its simplicity clearly presents each prize-winning animal as an individual portrait",
+      "hicks delight in creating ornamental pattern is evident in the arrangement of fences while the rich red and bright white of the house and barn symmetrically flank this central landscape"
+    ]
+  },
+  {
+    "image_id": 113,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the work an oil painting on canvas with dimensions of 147 cm \u00d7 89.2 cm -lrb- 57.9 in \u00d7 35.1 in -rrb- in portrait seemingly depicts a figure demonstrating an abstract movement in its ochres and browns",
+      "the discernible body parts of the figure are composed of nested conical and cylindrical abstract elements assembled together in such a way as to suggest rhythm and convey the movement of the figure merging into itself",
+      "dark outlines limit the contours of the body while serving as motion lines that emphasize the dynamics of the moving figure while the accented arcs of the dotted lines seem to suggest a thrusting pelvic motion",
+      "the movement seems to be rotated counterclockwise from the upper left to the lower right corner where the gradient of the apparently frozen sequence corresponding to the bottom right to top left dark respectively becomes more transparent the fading of which is apparently intended to simulate the older section",
+      "at the edges of the picture the steps are indicated in darker colors",
+      "the center of the image is an amalgam of light and dark that becomes more piqued approaching the edges",
+      "the overall warm monochrome bright palette ranges from yellow ochre to dark almost black tones"
+    ]
+  },
+  {
+    "image_id": 114,
+    "test": "to the right of the woman is a vase of flowers",
+    "refs": [
+      "interior with young woman seen from the back -lrb- danish interi\u00f8r med ung kvinde set fra ryggen -rrb- is an oil-on-canvas painting from c. 1903 04 by the danish artist vilhelm hammersh\u00f8i",
+      "the young woman featured is hammersh\u00f8i 's wife ida whom he painted frequently with her back turned",
+      "it serves to concentrate the viewer 's attention on the pretty nape of her neck highlighted between the demure black dress and the simple tight braid of her hair",
+      "ida 's dark hair contrasts with the fair skin on her neck with light coming in from the left while her black clothing stands out against the pale background while the play of light and shadow on the folds of her dress adds depth to the otherwise flat character of the painting"
+    ]
+  },
+  {
+    "image_id": 115,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "nude -lrb- 1910 french nu serbian \u043a\u0443\u043f\u0430\u0447\u0438\u0446\u0430 / kupa\u010dica -rrb- is a painting by french impressionist pierre-auguste renoir"
+    ]
+  },
+  {
+    "image_id": 116,
+    "test": "the painting depicts a group of people in a rural setting",
+    "refs": [
+      "like the other works in this series it depicts a small room cluttered with surreal objects",
+      "this time the main focus is a framed picture of a factory complex"
+    ]
+  },
+  {
+    "image_id": 117,
+    "test": "the painting depicts a group of people in a rural setting",
+    "refs": [
+      "done in oil on canvas the painting depicts a french cavalryman on a yellow field",
+      "dragoons were mounted infantry capable of riding into on an engagement on horses before dismounting to engage enemy forces on foot this important role coupled with the cost of horses resulted in dragoons being known as elite-but-expensive troops"
+    ]
+  },
+  {
+    "image_id": 118,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it is a landscape painted in a luminist style",
+      "towering mountains are on the right and a lake is in the center both are below a wispy cloudy sky"
+    ]
+  },
+  {
+    "image_id": 119,
+    "test": "the painting depicts a woman sitting on a couch in front of a window",
+    "refs": [
+      "according to vasari the musical instruments strewn about cecilia 's feet were not painted by raphael but by his student giovanni da udine",
+      "the central figure st. cecilia seems rapt in such inspiration as produced her image in the painter 's mind her deep dark eloquent eyes lifted up her chestnut hair flung back from her forehead she holds an organ in her hands her countenance as it were calmed by the depth of its passion and rapture and penetrated throughout with the warm and radiant light of life",
+      "she is listening to the music of heaven and as i imagine has just ceased to sing for the four figures that surround her evidently point by their attitudes towards her particularly st. john who with a tender yet impassioned gesture bends his countenance towards her languid with the depth of emotion",
+      "at her feet lie various instruments of music broken and unstrung"
+    ]
+  },
+  {
+    "image_id": 120,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting can be seen as one of a number of venetian paintings of the 1510s showing two or three half-length figures with heads close together often with their expressions and interactions enigmatic",
+      "against a dark background two male figures are shown one in front of the other with the rear one looking over his shoulder at a foreground figure who is tapping his shoulder making him turn sharply",
+      "this foreground figure is dressed in armour and his other hand hides a dagger or a sword of which we see only the hilt suggesting an attack is imminent",
+      "the rear figure is a young man with flowing blonde hair wearing a garland of vine leaves on his head who has also reached for his weapon the hilt dimly visible at bottom centre",
+      "the foreground figure has his head turned away from the viewer"
+    ]
+  },
+  {
+    "image_id": 121,
+    "test": "the painting depicts a woman standing in front of a window",
+    "refs": [
+      "the painting depicts two girls wearing dresses and with their hair tied running from the viewer"
+    ]
+  },
+  {
+    "image_id": 122,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "its primary composition is the contrast between the solemn jester -lrb- the titular sta\u0144czyk -rrb- and the lively ball going on in the background"
+    ]
+  },
+  {
+    "image_id": 123,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the painting depicts three seemingly identical men in bowler hats",
+      "they are in an outdoor setting at twilight",
+      "each is facing a different direction",
+      "in the sky above each figure is a separate waxing crescent moon",
+      "men in bowler hats appear frequently in magritte 's work starting with his 1926 painting"
+    ]
+  },
+  {
+    "image_id": 124,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the painting depicts the virgin mary seated on a high pedestal in luxurious robes holding a rather large baby jesus on her lap",
+      "six angels crowded together on the madonna 's right adore the christ-child"
+    ]
+  },
+  {
+    "image_id": 125,
+    "test": "to the left of the wall is a window",
+    "refs": [
+      "the casts include portrait busts death masks and life masks of friends of the artist children classical personae such as dante schiller and possibly goethe or wagner a dog and male and female torsos art historian werner hofmann saw this assemblage as a conscious blurring of the dividing line between fame and anonymity",
+      "that painting features casts of two arms and a separate hand the arms arranged so as to suggest a relationship to a body from which they have been removed"
+    ]
+  },
+  {
+    "image_id": 126,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts the moment in shakespeare 's romeo and juliet when juliet kneeling beside romeo 's body hears a footstep and draws a dagger to kill herself",
+      "it depicts the moment in shakespeare 's romeo and juliet at which juliet kneeling beside romeo 's body hears a footstep and draws romeo 's dagger"
+    ]
+  },
+  {
+    "image_id": 127,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting depicts the seven corporal works of mercy in traditional catholic belief which are a set of compassionate acts concerning the material needs of others"
+    ]
+  },
+  {
+    "image_id": 128,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it shows an image from augustine of hippo 's the city of god describing the glory gained by the blessed and on the right includes charles himself with his wife isabella of portugal his son philip ii of spain his daughter joanna of austria mary of hungary and eleanor of austria all wearing their shrouds",
+      "titian 's signature is shown on a scroll held by john the evangelist",
+      "at the top is an image of the holy trinity next to the virgin mary and saint john the baptist",
+      "the painting also features king david moses and noah along with a figure in green identified as mary magdalene the erythraean sibyl judith rachel or the catholic church"
+    ]
+  },
+  {
+    "image_id": 129,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "venus with a mirror -lrb- about 1555 -rrb- is a painting by titian now in the national gallery of art in washington dc and it is considered to be one of the collection 's highlights"
+    ]
+  },
+  {
+    "image_id": 130,
+    "test": "the painting depicts a group of young men standing in front of a window",
+    "refs": [
+      "head of a walrus -lrb- german kopf eines walrosses -rrb- is a 1521 pen drawing and watercolour by the german artist albrecht d\u00fcrer",
+      "it looks more like a hairless puppy with tusks"
+    ]
+  },
+  {
+    "image_id": 131,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it shows arsinoe iv of egypt fleeing from alexandria after julius caesar arrived in the city in 48 bc and sided with arsinoe 's half-sister cleopatra"
+    ]
+  },
+  {
+    "image_id": 132,
+    "test": "the painting depicts a group of young women sitting in front of a window",
+    "refs": [
+      "in the foreground are the bodies of dead irish warriors",
+      "to the left is a broken-stringed celtic harp",
+      "richard stands on a broken high cross"
+    ]
+  },
+  {
+    "image_id": 133,
+    "test": "the painting depicts a group of young men playing cards",
+    "refs": [
+      "it depicts the french nobleman guy de lusignan held prisoner by saladin",
+      "the sketch was titled the captive king and it shows the french nobleman guy de lusignan held prisoner by saladin"
+    ]
+  },
+  {
+    "image_id": 134,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "launching the boat",
+      "it depicts the activities of the local fishermen a favourite subject for the skagen painters"
+    ]
+  },
+  {
+    "image_id": 135,
+    "test": "the painting depicts a young woman standing in front of a window",
+    "refs": [
+      "the child 's bath -lrb- or the bath -rrb- is an 1893 oil painting by american artist mary cassatt",
+      "the subject matter and the overhead perspective were inspired by japanese woodblocks",
+      "it shows dignity in motherhood and has a style similar to that of degas",
+      "the female figure holds up the child firmly and protectively with her left hand while the other hand carefully washes the child 's feet",
+      "the small and chubby left arm of the child braces against the mother 's thigh while the other hand is clamped firmly on the child 's own thigh",
+      "the mother 's right hand presses firmly but still gently on the foot in the basin mimicking the child 's own pressure on her thigh",
+      "to indicate depth cassatt painted the faces to recede into space",
+      "the paint strokes are layered and rough creating thick lines that outline the figures and stand them out from the patterned background"
+    ]
+  },
+  {
+    "image_id": 136,
+    "test": "the painting depicts a woman sitting in a chair with her back to the spectator",
+    "refs": [
+      "esther is shown seated at the center of the canvas arms above her head as she arranges her blond coiffure",
+      "preparing to offer herself for the king 's approval she holds a pose that is profoundly erotic in its pictorial treatment",
+      "she is nude to the waist except for a necklace and bracelets on her arms her legs are swathed in white and rose-colored garments",
+      "at the left a servant woman dressed in rich blue brings accessories and at the right hegai clad in bright red offers a jewel box",
+      "esther acknowledges neither of them staring out of the picture to the left",
+      "behind them is a landscape of trees and sky"
+    ]
+  },
+  {
+    "image_id": 137,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the painting is a series of multi-colored oil and pencil drawings of what appear to be teeth marks or teeth charts from a dental office or laboratory",
+      "each image is drawn on a piece of paper which is then adhered to a canvas"
+    ]
+  },
+  {
+    "image_id": 138,
+    "test": "the painting depicts the virgin mary sitting on a throne surrounded by angels",
+    "refs": [
+      "in rubens depiction of the assumption of mary a choir of angels lifts her in a spiraling motion toward a burst of divine light",
+      "around her tomb are gathered the 12 apostles some with their arms raised in awe others reaching to touch her discarded shroud",
+      "the women in the painting are thought to be mary magdalene and the virgin mary 's two sisters",
+      "a kneeling woman holds a flower referring to the lilies that miraculously filled the empty coffin"
+    ]
+  },
+  {
+    "image_id": 139,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts the adoration of the golden calf by the israelites from chapter 32 of the book of exodus"
+    ]
+  },
+  {
+    "image_id": 140,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the picture shows a woman facing left and playing a virginal",
+      "in the left foreground is a viola da gamba holding a bow between its strings",
+      "a landscape is painted on the inside lid of the virginal and the painting on the wall is either the original or a copy of the procuress by dirck van baburen -lrb- now in the museum of fine arts in boston -rrb- which belonged to vermeer 's mother-in-law"
+    ]
+  },
+  {
+    "image_id": 141,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "it shows john the evangelist as a young man holding a chalice in which is a dragon referring to his surviving a poisoned cup of wine in prison"
+    ]
+  },
+  {
+    "image_id": 142,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting is a nude depicting a woman lying on a sofa",
+      "it is not so much a question of a contrast between a skinny awkward black haired woman with her small slightly pinched features and boucher 's plump and sensuous blonde with her pretty childish features and rounded proportions it is more that brack had engaged his whole repertoire of formal devices deliberately to destroy any trace of sensuousness"
+    ]
+  },
+  {
+    "image_id": 143,
+    "test": "to the right of the man is a large tree trunk",
+    "refs": [
+      "the angel intertwines with the old man apparently whispering inspiration into his ear",
+      "the restless matthew leans to work as the angel enumerates for him the work to come",
+      "all is darkness but for the two large figures",
+      "matthew appears to have rushed to his desk his stool teetering into our space"
+    ]
+  },
+  {
+    "image_id": 144,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting was produced on the second trip morice is shown resting in the countryside with three whippets after a hunt",
+      "in the background are the torre leonina and the torre dei venti"
+    ]
+  },
+  {
+    "image_id": 145,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the edges were secured using a gummed tape that left a white margin of bare paper at the edge when it was removed",
+      "this led to the first of the black and grey paintings that immediately introduced new formal elements the new paintings were in two parts above and below a single dividing line",
+      "a division ran right across the image from one edge to the other like a horizon line",
+      "the painted area was framed with a band of white just over a centimetre wide",
+      "their landscape-like qualities with the black at the top an arctic wasteland under a vast and empty sky is at the same time more deathlike"
+    ]
+  },
+  {
+    "image_id": 146,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "it depicts the installation of the sigismund bell in the wawel cathedral in krak\u00f3w in 1521",
+      "it shows a crowd of people with a number of identifiable figures of historical importance",
+      "zygmunta -rrb- as proposed by mieczys\u0142aw treter the raising of the sigismund bell king sigismund 's bell or just sigismund bell -lrb- dzwon zygmunta -rrb-"
+    ]
+  },
+  {
+    "image_id": 147,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "in addition to the main panel depicting the enthroned virgin and child surrounded by angels and saints there were 9 predella panels accompanying it narrating the legend of the patron saints saints cosmas and damian",
+      "the san marco altarpiece depicts a portrait of the virgin and child seated on a throne surrounded by saints and angels",
+      "the formal elements are innovative for a contemporary virgin and child altarpiece as the positioning of the characters creates a deeply receding and logical space in front of the landscape background",
+      "the pomegranate embroidered curtain behind the virgin and child establishes a distinct horizontal line separating the events depicted in the painting from the landscape behind it",
+      "the altarpiece is situated on the then newly invented single rectangular panel which helps turn a typical easel painting into the principal image of the altarpiece",
+      "by dressing both kneeling saints as well as several of the angels in red angelico creates a vertical link and further geometric stability",
+      "on the right saint damian kneels on an inward angle towards the center praising the virgin and child which draws the viewer 's eyes towards the painting 's vanishing point at the virgin 's chin",
+      "the virgin and child are featured precisely at the vertical and horizontal axes intersecting points and are placed above angelico 's trompe l'oeil depiction of the crucifixion",
+      "though they are sitting on a pedestal the virgin and child do not seem much larger than the rest of the characters showing a lack of a scale setting the main subjects apart from other mortals"
+    ]
+  },
+  {
+    "image_id": 148,
+    "test": "the painting depicts a group of people walking through the streets of amsterdam",
+    "refs": [
+      "he wrote the river fills much of the right-hand side of the picture",
+      "in the centre is a road with several figures on the river are a raft of timber and a small vessel from which a gun is being fired",
+      "on the left are three windmills houses and a bleaching-ground",
+      "the town with its many churches and public buildings extends in the background"
+    ]
+  },
+  {
+    "image_id": 149,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts from a victorious dutch colonial perspective the capture of prince diponegoro in 1830 which signaled the end of the java war -lrb- 1825 1830 -rrb-",
+      "the arrest is portrayed from a dutch colonial perspective with diponegoro abandoning his followers and submitting peacefully to a confident de kock as the dutch flag flies high above the lieutenant general 's home",
+      "diponegoro 's soldiers leave their weapons on the ground following their leader 's submission some throw themselves to the ground in front of him"
+    ]
+  },
+  {
+    "image_id": 150,
+    "test": "the painting depicts a scene from the life of thomas the evangelist",
+    "refs": [
+      "the tabernacle is composed of a rectangular marble frame with a triangular top with a sculpted almond depicting the blessing christ and cherubims",
+      "in the center within an arched opening are fra angelico 's panel of the maest\u00e0 with twelve musician angels",
+      "at the front are two shutter panels with further paintings of saints",
+      "the panels are completed by a predella placed below with three scenes of st. peter dictating the gospel to st. mark adoration of the magi and martyrdom of st. mark",
+      "the central panel although damaged has a style similar to angelico 's early works with a marble step over which is the throne",
+      "behind two draperies -lrb- perhaps a hint to the guild 's textile activities -rrb- is a ceiling painted in blue with stars and the holy spirit dove which is similar to masolino 's annunciation in washington dc"
+    ]
+  },
+  {
+    "image_id": 151,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the paintings illustrate a scene from james thomson 's 1727 poem summer in which a young man accidentally sees a young woman bathing naked and is torn between his desire to look and his knowledge that he ought to look away"
+    ]
+  },
+  {
+    "image_id": 152,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "an infant 's head is also shown in the cot this is am\u00e9d\u00e9e de pastoret a future conseiller d'etat painted by ingres in 1826"
+    ]
+  },
+  {
+    "image_id": 153,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "it depicts gauguin 's friend charles laval in profile with an assortment of inanimate objects including a ceramic pot gauguin made himself"
+    ]
+  },
+  {
+    "image_id": 154,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the virgin seated on a cushion placed directly on the ground with the child standing on her lap holds a vase in her left hand which contains roses and a lily symbols of motherhood and purity",
+      "the child who is also holding a lily rests his forehead on his mother 's cheek",
+      "they are set under a cloth of honour made of gold and black embroidered brocade held by three angels while two more angels are seated on the ground playing an organ and a lute",
+      "the monumental figures the splendour of the clothes the modulated light and the use of the blue colour place this panel in the purest fifteenth-century italian style"
+    ]
+  },
+  {
+    "image_id": 155,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "renoir 's people seem to stand on a forest floor of blossoms",
+      "the girl on the swing could be fifteen her pink dress with a hat on head increases the charm of painting"
+    ]
+  },
+  {
+    "image_id": 156,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the painting shows an infrequent composition with the virgin holding the child who writes on a book an allusion to his intervention in the holy books",
+      "on the right is st. jerome recognizable by his cardinal dress leaving a book on the marble throne where the madonna sits in this case this is one of his traditional attributes of knowledge",
+      "jesus wears a pearl-lined coif which can be seen in another pinturicchio 's work of the period the crucifixion between sts",
+      "on the right is an open landscape a typical element of the renaissance umbrian school"
+    ]
+  },
+  {
+    "image_id": 157,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it was first exhibited at the royal academy of arts in 1856 at its first showing hughes accompanied the painting with an extract from tennyson 's poem the miller 's daughter love is hurt with jar and fret love is made a vague regret eyes with idle tears are set idle habit links us yet what is love",
+      "it shows a distinctly pre-raphelite style in which a soft approach to nature and femininity is found",
+      "bright colors and red-haired women as well as an emphasis on nature and symbolism characterize this style which can be found in the late 1800s as a response to industrialization",
+      "the painting depicts a young couple at a moment of emotional crisis",
+      "the male figure is barely visible his head bent over the young woman 's left hand",
+      "the woman is looking down at fallen blossoms suggesting the end of spring and of early and young love"
+    ]
+  },
+  {
+    "image_id": 158,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the painting features a young kitchen maid in a hollandish kitchen taking a break from her work"
+    ]
+  },
+  {
+    "image_id": 159,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the composition pivots around the virgin who occupies the centre of the scene",
+      "in the background on the right two small figures of women are riding a stair",
+      "the two donor portraits show the unknown donors kneeling behind a cordonata"
+    ]
+  },
+  {
+    "image_id": 160,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it shows saint cecilia playing a keyboard instrument possibly a harpsichord",
+      "two cherubs in front of her hold up a scroll with a musical score whilst two angels sing in the background and a third cherub lifts a curtain"
+    ]
+  },
+  {
+    "image_id": 161,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it was painted for the church of san francesco in deruta and shows the town at its base along with the inscription decreto pubblico dfcta / anno d -lsb- omi -rsb- ni mcccclxxv -lsb- ii/iii -rsb-",
+      "this shows it was an ex voto for the end of the plague in 1476 the two saints are st roch -lrb- right -rrb- and st romanus -lrb- left -rrb- both invoked against the plague"
+    ]
+  },
+  {
+    "image_id": 162,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "saint jerome writing is a painting by the italian master michelangelo merisi da caravaggio in 1607 or 1608 housed in the oratory of st john 's co-cathedral valletta malta"
+    ]
+  },
+  {
+    "image_id": 163,
+    "test": "the painting depicts a woman sitting on a couch in a bedroom",
+    "refs": [
+      "painted in 1875 76 the work portrays a woman and man sitting side-by-side drinking a glass of absinthe",
+      "the man wearing a hat looks to the right off the edge of the canvas while the woman dressed more formally in fashionable dress and hat stares vacantly downward",
+      "a glass filled with absinthe is on the table in front of her"
+    ]
+  },
+  {
+    "image_id": 164,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "goya 's yard is overwhelmingly stark showing shackled inmates enclosed by high walls and a heavy stone arch",
+      "inmates fight and grin idiotically or huddle in despair all bathed in an oppressive grey and green light guarded by a single man",
+      "the top of the canvas vanishes with sunlight emphasizing the nightmarish scene below"
+    ]
+  },
+  {
+    "image_id": 165,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it depicts dorothea berck at age 51 the wife of the prosperous haarlem merchant joseph coymans whose portrait hals also painted",
+      "portraits of subjects with one glove on and one glove off are common in dutch 17th-century marriage pendant portraits",
+      "gloves symbolize the wedding vows where the husband and wife each hold one of a pair of gloves"
+    ]
+  },
+  {
+    "image_id": 166,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "landscape with saint john on patmos is a 1640 neo-classical painting by nicolas poussin"
+    ]
+  },
+  {
+    "image_id": 167,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the knight with his arrogant pose is sitting beside a fountain in which his horse is drinking",
+      "he is dressed \u00e0 l'espagnole an expression which in eighteenth-century france was used to refer to picturesque or fancy attire and had no bearing on the spanish fashions of the time"
+    ]
+  },
+  {
+    "image_id": 168,
+    "test": "the painting depicts the virgin mary and the child mary",
+    "refs": [
+      "the virgin is standing on a pedestal which includes harpies sculpted in relief from which the painting takes its name",
+      "the figures have a leonardo-like aura with a pyramid shaped composition",
+      "the harpies figures from pagan mythology -lrb- or locusts -rrb- here represent temptation and sin which the virgin has conquered and stands upon",
+      "the christ child is shown as unusually old and has an athletic contrapposto pose",
+      "he looks down to the putti and all three have a mischiefness that contrasts with the serious abstracted air of the adults"
+    ]
+  },
+  {
+    "image_id": 169,
+    "test": "the painting depicts a woman sitting on a couch in a bedroom",
+    "refs": [
+      "the woman is tightly framed and shown gazing upwards in fear",
+      "her black dress long dark hair and features are rendered using chiaroscuro"
+    ]
+  },
+  {
+    "image_id": 170,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "this painting shows a seated woman with a violin bent over a music book",
+      "vallayer was admitted to the acad\u00e9mie royale de peinture et de sculpture in 1770 on the basis of her still life paintings several of which are still in the collection of the louvre including a still life of musical instruments that shows a similar violin"
+    ]
+  },
+  {
+    "image_id": 171,
+    "test": "the painting depicts a group of young women sitting at a table",
+    "refs": [
+      "it depicts several crewmen on the deck of a ship in a storm manning the pump to remove water from the vessel",
+      "the ship has lost at least one of its sails and the deck is awash",
+      "the red ensign hangs upside-down from the shrouds to indicate the ship 's distress",
+      "one man shouts up towards the rigging and another is up in the shrouds gesturing at the swell",
+      "university of louisville professor jongwoo jeremy kim detects a homoerotic subtext and speculates that the second figure from the left with a white shirt under a grey waistcoat wearing a cap could be tuke himself looking across at jack rowling one of tuke 's regular models on the right in a red hat"
+    ]
+  },
+  {
+    "image_id": 172,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the house was the right wing of 2 place lamartine arles france where on may 1 1888 van gogh rented four rooms",
+      "behind the next window with one shutter closed is van gogh 's bedroom",
+      "to the right side of the yellow house the avenue montmajour runs down to the two railway bridges",
+      "the first line with a train just passing served the local connection to lunel which is on the opposite -lrb- that is right -rrb- bank of river rh\u00f4ne",
+      "in the foreground to the left there is an indication of the corner of the pedestrian walk which surrounded one of the public gardens on place lamartine"
+    ]
+  },
+  {
+    "image_id": 173,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the genre painting depicts a scene inside a horse-drawn omnibus of the london general omnibus company",
+      "passengers could sit on benches to either side inside entering via a door at the rear or climb up to exposed seats on the roof",
+      "the scene is painted as if viewed by a person on one bench inside the omnibus looking across at passengers on the other side of the carriage",
+      "the painting depicts from left to right a relatively poor mother accompanied by a young girl -lrb- modelled by the artist 's wife and daughter -rrb- and carrying a baby the central figure is a fashionably well-dressed young woman with a long-handled parasol and basket of flowers she sits beside a city gentleman in top hat and frock coat reading his newspaper and then closer to the door are two more women a nurse seated in her starched uniform and a milliner boarding the bus holding a handrail with one hand and clasping a hatbox with the other",
+      "the side of the carriage behind and above the passengers is covered with advertising posters including millais 's bubbles painting for pears soap -lrb- millais studied beside joy -rrb-",
+      "visible through the window a hansom cab passes on the road beyond"
+    ]
+  },
+  {
+    "image_id": 174,
+    "test": "the painting depicts a woman sitting on a couch in front of a window",
+    "refs": [
+      "he is sitting in an osteria at a table talking with his friends",
+      "the two figures sitting beside him are depicted the figure turning his back to the viewers is the painter himself"
+    ]
+  },
+  {
+    "image_id": 175,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting shows venetians busy removing corpses from tombs along the right wall and from a crypt in the background",
+      "in the left foreground the standing luminous saint himself with a faint halo appears and beseeches them to stop because his body has been found and lies pale at his feet strewn on an oriental rug",
+      "in the center of the canvas an elder -lrb- portrait of rangone -rrb- kneels acknowledging the miracle",
+      "elsewhere in the room the figures are either astonished or oblivious to the apparition",
+      "in places the work appears unfinished the tiles of floor and cornices is visible through some clothing and figures",
+      "the foreshortening is accentuated by the tiles and the wall tombs and finally by rays of light seeming to emerge from the crypt in the background",
+      "in the foreground at the right a contorted half-naked man is described as possessed by demons above him hover strands of smoke"
+    ]
+  },
+  {
+    "image_id": 176,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the woman represented in fortitude could be lucrezia donati"
+    ]
+  },
+  {
+    "image_id": 177,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the souls of humans rise and descend to their fates as judged by christ who is surrounded by prominent saints",
+      "altogether there are over 300 figures with nearly all the males and angels originally shown as nudes many were later partly covered up by painted draperies of which some remain after recent cleaning and restoration",
+      "in the lower part of the fresco michelangelo followed tradition in showing the saved ascending at the left and the damned descending at the right",
+      "in the upper part the inhabitants of heaven are joined by the newly saved",
+      "the fresco is more monochromatic than the ceiling frescoes and is dominated by the tones of flesh and sky",
+      "the cleaning and restoration of the fresco however revealed a greater chromatic range than previously apparent",
+      "orange green yellow and blue are scattered throughout animating and unifying the complex scene",
+      "at the centre of the work is christ shown as the individual verdicts of the last judgement are pronounced he looks down towards the damned",
+      "to the left of christ is his mother virgin mary who turns her head to look down towards the saved though her pose also suggests resignation",
+      "preparatory drawings show her standing and facing christ with arms outstretched in a more traditional intercessory posture",
+      "surrounding christ are large numbers of figures the saints and other saved souls",
+      "on a similar scale to christ are john the baptist on the left and on the right saint peter holding the keys of heaven and perhaps offering them back to christ as they will no longer be needed",
+      "several of the main saints appear to be showing christ their attributes the evidence of the martyrdom",
+      "other prominent saints include saint bartholomew below peter holding the attribute of his martyrdom his own skin",
+      "they arise from their graves at bottom left and some continue upwards helped in several cases by angels in the air -lrb- mostly without wings -rrb- or others on clouds pulling them up",
+      "others the damned apparently pass over to the right though none are quite shown doing so there is a zone in the lower middle that is empty of souls",
+      "a boat rowed by an aggressive charon who ferried souls to the underworld in classical mythology -lrb- and dante -rrb- brings souls to land beside the entrance to hell his threatening them with his oar is a direct borrowing from dante",
+      "in the centre above charon is a group of angels on clouds seven blowing trumpets -lrb- as in the book of revelation -rrb- other holding books that record the names of the saved and damned",
+      "to their right is a larger figure of a soul who has just realized that he is damned and appears paralyzed with horror",
+      "two devils are pulling him downwards",
+      "to the right of this devils pull down other souls some are being pushed down by angels above them"
+    ]
+  },
+  {
+    "image_id": 178,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "freedom of speech depicts a scene of a local town meeting in which jim edgerton the lone dissenter to the town selectmen 's announced plans to build a new school was accorded the floor as a matter of protocol",
+      "the blue-collar speaker wears a plaid shirt and suede jacket",
+      "he has dirty hands and a darker complexion than others in attendance",
+      "the other attendees are wearing white shirts ties and jackets",
+      "although one of the men is wearing a wedding band the speaker is not",
+      "edgerton 's youth and workmanlike hands are fashioned with a worn and stained jacket while the other attendees appear to be older and more neatly and formally dressed",
+      "he is shown standing tall his mouth open his shining eyes transfixed he speaks his mind untrammeled and unafraid",
+      "according to bruce cole of the wall street journal the closest figure in the painting is revealing a subject of the meeting as a discussion of the town 's annual report",
+      "according to robert scholes the work shows audience members in rapt attention with a sort of admiration of this lone speaker"
+    ]
+  },
+  {
+    "image_id": 179,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "it shows james the less holding a book and with saint john the evangelist and other works forms part of the set of works showing the apostles commissioned by cardinal bernardo de sandoval y rojas"
+    ]
+  },
+  {
+    "image_id": 180,
+    "test": "the painting depicts a group of people gathered around a cornfield",
+    "refs": [
+      "it shows a lane leading from east bergholt toward dedham essex"
+    ]
+  },
+  {
+    "image_id": 181,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "christ on the cross christ between the two murderers or le coup de lance is a 1620 painting of the crucifixion of jesus by peter paul rubens originally intended for the convent of the friars minor"
+    ]
+  },
+  {
+    "image_id": 182,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "both young women are probably the two sisters of courbet zoe -lrb- in the center -rrb- and juliet -lrb- seated -rrb-"
+    ]
+  },
+  {
+    "image_id": 183,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the scene depicts the virgin mary crowned by a hovering angel while she presents the infant jesus to rolin",
+      "it is set within a spacious loggia with a rich decoration of columns and bas-reliefs",
+      "in the background is a landscape with a city on a river probably intended to be autun in burgundy rolin 's hometown",
+      "a wide range of well detailed palaces churches an island a towered bridge hills and fields is portrayed subject to a uniform light",
+      "perhaps some of the chancellor 's many landholdings around autun are included in the vista",
+      "a haze covers a mountain range in the far distance",
+      "the small garden with many flowers identifiable -lrb- including lilies irises paeonies and roses -rrb- visible just outside the columns symbolizes mary 's virtues",
+      "beyond two male figures wearing chaperons are looking through the crenellations of what looks to be a fortified balcony or bridge",
+      "the figure on the right wears a similar red chaperon to the probable van eyck self-portrait in the national gallery london",
+      "near to them are two peacocks symbols both of immortality and of pride to which even a powerful man as rolin might succumb",
+      "the chancellor whose strong character is well rendered by the artist is wearing a fur-lined elegant garment the virgin the same size as rolin -lrb- rather a novelty in comparison to the gothic painting tradition -rrb- is instead covered by a red mantle",
+      "the infant jesus holds a cross in his left hand",
+      "the perfectionist rendering of details and textures such as the capitals the checquered pavement the goldwork of the angel 's crown or the garments is characteristic of jan van eyck 's work of which this is one of the finest examples",
+      "comparison of the floor-tiles with other elements shows that the figures are only about six feet from the columned loggia screen and that rolin might have to squeeze himself through the opening to get out that way"
+    ]
+  },
+  {
+    "image_id": 184,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it is noted for its innovative framing and for its rendering of the decorative oriental carpet seen at mary 's feet",
+      "the work was commissioned by the castilian merchant jean de sedano and features the virgin and child in an enclosed garden",
+      "each wing shows a donor kneeling in prayer accompanied by a saint john the baptist is seen to the left john the evangelist to the right",
+      "the panels are unified by the continuous background landscape of green fields and a serene deep blue seascape",
+      "the donor appears kneeling in prayer in the left wing being blessed by john the baptist with his young son by his side",
+      "his much younger wife is shown in the right panel presented to the virgin by john the evangelist"
+    ]
+  },
+  {
+    "image_id": 185,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the altarpiece shows francesco gonzaga paying homage to mary who sits on a high throne decorated with marbles intarsias and bas-reliefs",
+      "the base of the throne with lion paws has within a medallion the inscription regina/celi let / allelvia -lrb- queen of heaven rejoice alleluia -rrb- it lies on a circular basement with a bas-relief of the original sin and other stories from the book of genesis which are partly obscured by the praying figures",
+      "the throne 's back has a large solar disc decorated with weavings and vitreous pearls",
+      "the child jesus who holds two red flowers -lrb- symbols of the passion -rrb- and mary look at francesco gonzaga who is kneeling and has a grateful and smiling expression while receiving their blessing",
+      "the protection given to gonzaga during the battle is also symbolized by mary 's mantle which partially covers his head",
+      "opposite to the donor are st. john the baptist with a cross featuring the usual cartouche saying ecce/agnvs/dei ecce/q -lsb- vi -rsb- toll/it p -lsb- eccata -rsb-",
+      "-lrb- behold the lamb of god which takes away the sins of the world -rrb- and his mother st. elizabeth protector of isabella d'este wife of francesco gonzaga",
+      "unlike the norsa st. elizabeth who is represented as a jewess in a yellow turban was said to be the first to recognize the sanctity of mary",
+      "at the sides are two couples of standing saints in the foreground are two military saints the archangel st. michael with a sword and st. longinus with a broken spear donning richly decorated armors behind them are st. andrew patron saint of mantua with a long stick with the cross and st. george another military saint with a helmet and a long red lance",
+      "the scene is set in an apse formed by a pergola of leaves flowers and fruits with several birds the pergola 's frame has at the top a shell -lrb- an attribute of the virgin as new venus -rrb- from which hang threads of coral pearls and rock crystal as well as a large piece of red coral another hint to the passion of jesus",
+      "the parrot is a comment on the birth of jesus"
+    ]
+  },
+  {
+    "image_id": 186,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "it depicts fifth avenue in new york city in the rain draped with us flags",
+      "the painting measures 42 by 22.25 inches -lrb- 106.7 cm \u00d7 56.5 cm -rrb- and is dominant by red and blue and whites tones representing the stars and stripes",
+      "several dark figures in the middle distance hold umbrellas and while the far distance fades into the blue background",
+      "the flags seem to float in mid-air flying from poles that project out from the buildings on the street but the buildings are not visible",
+      "the flags and human figures are reflected on the wet street and sidewalk"
+    ]
+  },
+  {
+    "image_id": 187,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "it is his first genre painting and shows a scene of contemporary life an image of mercenary love perhaps in a brothel"
+    ]
+  },
+  {
+    "image_id": 188,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it begins identically to metamorphosis ii with the word metamorphose -lrb- the dutch form of the word metamorphosis -rrb- forming a grid pattern and then becoming a black-and-white checkered pattern",
+      "the angles of the checkered pattern change to elongated diamond shapes",
+      "these then become an image of flowers with bees",
+      "this image then returns to the diamond pattern and back into the checkered pattern",
+      "the birds then become sailing boats",
+      "from the sailing boats the image changes to a second fish pattern",
+      "then from the fish to horses",
+      "the horses then become a second bird pattern",
+      "the second bird pattern then becomes black-and-white triangles which then become envelopes with wings",
+      "these winged envelopes then return to the black-and-white triangles and then to the original bird pattern"
+    ]
+  },
+  {
+    "image_id": 189,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting shows a woman seated beside an urn filled with balls of wool cupid is leaning across her shoulders applying perfume to her ear"
+    ]
+  },
+  {
+    "image_id": 190,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "according to frances carey deputy keeper in the department of prints and drawings british museum the painting shows the destruction of babylon and the material world by natural cataclysm",
+      "michael freeman supernumerary fellow and lecturer in human geography at mansfield college describes the painting as follows storms and volcanic eruptions earthquakes and other natural disasters swept like tidal waves through early nineteenth-century periodicals broadsheets and panoramas"
+    ]
+  },
+  {
+    "image_id": 191,
+    "test": "the painting depicts a young woman sitting on a chair with her back to the viewer",
+    "refs": [
+      "it shows the painter gerard de lairesse holding a paper",
+      "he sits in an arm-chair turned to the left and looking at the spectator",
+      "his left hand which rests on the arm of the chair holds a paper",
+      "his right hand is thrust into the coat at his breast",
+      "his rich curls fall on his broad and smooth white collar which has two tassels",
+      "he wears a dark coat with a black cloak over it and a large broad-brimmed felt hat"
+    ]
+  },
+  {
+    "image_id": 192,
+    "test": "the painting depicts a young woman sitting on a sofa with her back to the spectator",
+    "refs": [
+      "still life of a lamb 's head and flanks -lrb- spanish"
+    ]
+  },
+  {
+    "image_id": 193,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "rembrandt shows the episode of jesus and the woman taken in adultery from the gospel of saint john",
+      "to do this they produced a woman who had been caught taking part in adultery",
+      "in contrast the jews are in the dark and appear lower"
+    ]
+  },
+  {
+    "image_id": 194,
+    "test": "the painting depicts a scene from the bible showing a scene from the bible",
+    "refs": [
+      "the fresco is composed as a large miniature where in a luxurious garden surrounded by a hedge death enters riding a skeletal horse firing arrows from a bow",
+      "death aims at characters belonging to all social levels killing them",
+      "the horse occupies the centre of the scene with its ribs visible and an emaciated head showing teeth and the tongue",
+      "death has just released an arrow which has hit a young man in the lower right corner death also wears scythe at the side of the saddle its typical attribute",
+      "on the lower part are corpses of the people previously killed emperors popes bishops friars -lrb- both franciscans and dominicans -rrb- poets knights and maidens",
+      "each character is portrayed differently some still have a grimace of pain on the face while others are serene some have their limbs dismembered on the ground and others are kneeling after having been just struck by an arrow",
+      "on the left is a group of poor people invoking death to stop their suffering but being ignored",
+      "among them the figure looking towards the observer has been proposed as a possible self-portrait of the artist",
+      "on the right is a group of the nobles shown as having no interest in the events most of them continuing their activities",
+      "they include several musicians richly dressed noblewomen and knights with fur clothes as symbols of life and youth",
+      "a man has a hawk on his arm and another is leading two hounds"
+    ]
+  },
+  {
+    "image_id": 195,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "a young girl at a window in full face",
+      "she leans her right arm on the window-sill and rests her head on her left hand",
+      "she wears a dull red jacket",
+      "her dark hair is combed back into a small golden-yellow cap",
+      "the loose chemisette is slightly open at the throat showing a string of pearls and a little black ribbon hanging down on the bosom",
+      "dark background the figure is lighted from above to the left"
+    ]
+  },
+  {
+    "image_id": 196,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the scenes are distributed in and around an idealized jerusalem depicted as a walled medieval city with exotic towers topped by domes",
+      "the high birds-eye point of view makes calvary visible behind the city"
+    ]
+  },
+  {
+    "image_id": 197,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "christ crucified -lrb- cristo crucificado -rrb- is a 1780 painting of the crucifixion of jesus by francisco de goya"
+    ]
+  },
+  {
+    "image_id": 198,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "painted when the artist was yet 31 the work severely and pointedly contrasts the grandeur and might of a cloud-born olympian male deity against that of a diminutive and half nude nymph"
+    ]
+  },
+  {
+    "image_id": 199,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "a view of het steen in the early morning ch\u00e2teau de steen with hunter or het steen is a landscape painting by rubens dating to around 1636",
+      "a rare example of a work painted for the artist 's own pleasure rather than for a commission it shows a view of the het steen estate near brussels which he had acquired in 1635 set in an early-morning autumn landscape",
+      "he had initially intended a much smaller painting focussing on the house using three small oak planks probably spares from his studio as the concept developed seventeen more panels were added",
+      "the painting features the first convincing depiction of a mackerel sky"
+    ]
+  },
+  {
+    "image_id": 200,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting comprises a collection of pieces of paper folded and sewed together painted with colorful abstract watercolor paintings"
+    ]
+  },
+  {
+    "image_id": 201,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the oil on canvas painting depicts a parisian boy holding a pipe in his left hand and wearing a garland or wreath of flowers"
+    ]
+  },
+  {
+    "image_id": 202,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the painting depicts the gare montparnasse railway station in paris france",
+      "it is a classic example of de chirico 's style depicting an angular perspective on an outdoor architectural setting in the long shadows and deep colours of early evening",
+      "on the horizon is a steam train with a plume of white smoke billowing away from it",
+      "the train image appears several times in de chirico 's work",
+      "in the foreground is a bunch of bananas another recurring image in de chirico 's work -lrb- cf."
+    ]
+  },
+  {
+    "image_id": 203,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "woman with a pearl necklace in a loge -lrb- or lydia in a loge -rrb- is an 1879 painting by american artist mary cassatt",
+      "this painting shows a view of the modern woman and is similar in style to degas",
+      "the painting shows a woman sitting on a large red chair in the balconies of the paris op\u00e9ra house",
+      "the figure is seated in front of a massive mirror that is reflecting the theater scene that the woman is experiencing it is also giving us the view point that the woman is having",
+      "the woman is sitting enjoying the sights the city nightlife that most impressionists were fascinated with as she people watches",
+      "she is dressed up as with what was expected of going to a theater with a peach colored dress makeup pearls gloves and hair pinned back",
+      "she is holding a fan and a flower is attached to the bodice of the dress",
+      "she looks bemused with what she is seeing",
+      "the background is very gestural and loose as people are carved out in simple brush marks of color",
+      "the rich colors of the painting draw the viewer in deep shadows create contrast against the brightness of the light source",
+      "the brush strokes within the dress itself give a texture to it and a liveliness to the piece",
+      "being a genre painter she was able to reproduce scenes of everyday life domestic settings and parties which she would romanticize to help create an ethereal air of wonder around the women she painted"
+    ]
+  },
+  {
+    "image_id": 204,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the painting depicts the miracles worked by st. francis xavier during his mission to asia and includes a large variety of figures from asia and africa as well as the destruction of a hindu idol in the background"
+    ]
+  },
+  {
+    "image_id": 205,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "landscape with the ashes of phocion is a 1648 painting also known as landscape with the ashes of phocion -lrb- collected by his widow -rrb- and the ashes of phocion collected by his widow by french artist nicolas poussin",
+      "and the outcasts are placed directly below the mighty nucleus of temple-rock-cloud"
+    ]
+  },
+  {
+    "image_id": 206,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting shows the virgin enthroned holding the child in the center with two flying angels who are holding above her an elaborated royal crown made of gold pearls and gems this was a flemish art scheme already widespread in the german area at the time",
+      "the throne 's backrest is covered with a green drape and by a baldachin which is also held by two flying cherubim",
+      "below is an angel playing a lute an evident homage to giovanni bellini 's altarpieces",
+      "mary is depicted in the act of distributing rose garlands to two groups of kneeling worshippers portrayed on two symmetrical rows at the sides",
+      "the two rows are headed on the left by pope julius ii -lrb- who had been approved the german brotherhood with a bull in 1474 -rrb- crowned by the child and followed by a procession of religious figures and on the right by the german emperor frederick iii -lrb- portrayed with the face of his son and patron of d\u00fcrer maximilian i -rrb- crowned by mary and followed by a lay procession",
+      "the pope and the emperor considered at the time the supreme authorities of the catholic world have previously deposed the papal tiara and the imperial crown and are now kneeling to receive the madonna 's blessing",
+      "other angels are distributing crowns of flowers as well as st. dominic of guzman -lrb- protector of the adoration of mary and of the rosary -rrb- who stands at the side of the virgin",
+      "near the left border is the patriarch of venice antonio soriano with the hands joined and next to him burkard von speyer then chaplain of the church of san bartolomeo who was also portrayed by d\u00fcrer in another painting",
+      "on the right nearby a lush alpine landscape is the artist 's self-portrait with a cartouche in a hand here is the signature with a short inscription reporting the time needed to complete the work -lrb- five months -rrb-",
+      "the characters next to the painter are likely leonhard vilt founder of the brotherhood of the rosary in venice and -lrb- in black -rrb- hieronymus of augsburg the architect of the new fondaco dei tedeschi"
+    ]
+  },
+  {
+    "image_id": 207,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "the portrait of sebasti\u00e1n de morra is a portrait by diego vel\u00e1zquez of sebasti\u00e1n de morra a court dwarf and jester at the court of philip iv of spain",
+      "vel\u00e1zquez portrays his whole body sitting on the ground wearing a rich cloak and with his short legs pointing forward in an inelegant position reminiscent of a marionette",
+      "he looks directly at the viewer motionless making no hand gestures leading one critic to suggest that the painting represents a denunciation of the court 's treatment of de morra and other dwarfs"
+    ]
+  },
+  {
+    "image_id": 208,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "madonna and child with saint jerome and saint nicholas of tolentino is a 1523-1524 oil on canvas painting by lorenzo lotto",
+      "the two flanking saints in the works are st jerome -lrb- left -rrb- and nicholas of tolentino -lrb- right -rrb-"
+    ]
+  },
+  {
+    "image_id": 209,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the painting depicts a nude woman putting on a dressing gown",
+      "if his subject was not glowing with an almost fluorescent irradiated green this would be one of brack 's most sensual pictures"
+    ]
+  },
+  {
+    "image_id": 210,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the scene shows a man digging at nighttime beside the river derwent in derbyshire",
+      "the painting shows a man blocking foxholes so that a subsequent foxhunt could kill the fox without the animal having the opportunity to hide underground"
+    ]
+  },
+  {
+    "image_id": 211,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "these are read from left to right virginia in the company of other women is violated or assaulted by marcus claudius tacitus who wants to force her to yield to appius claudius caecus",
+      "he carries her to the tribunal presided by appius claudius who declares her a slave the father and the husband of the woman plead for clemency the father to preserve the family honor kills her and flees on horseback"
+    ]
+  },
+  {
+    "image_id": 212,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the central figures are reminiscent of the classic black-clad grim reaper but paradoxically are tending to gardens traditionally symbols of birth or renewal"
+    ]
+  },
+  {
+    "image_id": 213,
+    "test": "the painting depicts a group of people standing in front of a window",
+    "refs": [
+      "it depicts a manual labourer who appears to be asleep worn out by his work but has actually been worked to death",
+      "many viewers assumed the man was sleeping worn out by his day of hard but honest labour",
+      "wallis gave no outright statement that the man depicted was dead but there are many suggestions to this effect",
+      "the frame was inscribed with a line paraphrased from tennyson 's a dirge -lrb- 1830 -rrb- now is thy long day 's work done the muted colours and setting sun give a feeling of finality the man 's posture indicates that his hammer has slipped from his grasp as he was working rather than being laid aside while he rests and his body is so still that a stoat only visible on close examination has climbed onto his right foot",
+      "the dead man wears the smock of an agricultural labourer which suggests that in former times he would have been employed year-round on a farm"
+    ]
+  },
+  {
+    "image_id": 214,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "charon is presented at the right side of the canvas as a lone figure with a shroud",
+      "charon 's facade is forbidding and obscured in the shadows and his oar is glinting like the rapier of a slayer"
+    ]
+  },
+  {
+    "image_id": 215,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "snow storm steam-boat off a harbour 's mouth making signals in shallow water and going by the lead"
+    ]
+  },
+  {
+    "image_id": 216,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the neutral background shows the influence of titian and the venetian school"
+    ]
+  },
+  {
+    "image_id": 217,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "he is drawn to the dramatic poses of performers and singers especially when presented as here from very close up",
+      "ballet rehearsal -lrb- 1873 -rrb- and the ballet class -lrb- 1874 -rrb- also depict performers both on stage and in practice"
+    ]
+  },
+  {
+    "image_id": 218,
+    "test": "the painting depicts a young woman standing in front of a window",
+    "refs": [
+      "a wind-beaten tree is an oil painting created in 1883 by vincent van gogh"
+    ]
+  },
+  {
+    "image_id": 219,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the young jesus well illuminated is the child jesus surrounded by a crowd of characters",
+      "at the left is a very young madonna with blonde hair similar to the saint barbara at the museo del prado",
+      "also on the left behind her are two characters confabulating on a background with the rising sun",
+      "at the right are two rows of figures as well as the priest who holds jesus on the altar and in the other hand the ritual knife",
+      "below between the offers are two small rabbits which resembles similar details in the arch of the first chapel frescoed by parmigianino in the church of san giovanni evangelista at parma"
+    ]
+  },
+  {
+    "image_id": 220,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "the painting depicts a stormy sea on a winter day",
+      "the cliff in the background is at \u00e9tretat -lrb- seine maritime -rrb- monet frequently stayed in the area during the winter of 1864-65 and wrote i spend my time outdoors on the stone when it 's big time -lsb- -rsb-",
+      "the painting is composed of four major elements each painted in a different way",
+      "the central part is invaded by the pearlized surfs painted in forms of commas",
+      "in the foreground a small beach on which there are old boats filled with thatch on the left and two fishermen with their boats in poor condition that ran aground on the shore",
+      "on the left in the background the cliff of \u00e9tretat can be seen and the rock strata are evoked by horizontal lines of brush",
+      "finally the upper part of the painting shows the sky painted in a way that expresses a curtain of rain"
+    ]
+  },
+  {
+    "image_id": 221,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the portrait depicts a young woman as a bride",
+      "behind the young woman is a branch of laurel -lrb- laurus -rrb- symbol of chastity and carrying the nuptial veil",
+      "the gesture of opening the fur mantle uncovers the bosom"
+    ]
+  },
+  {
+    "image_id": 222,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the prince is shown in the uniform of a captain-general -lrb- adapted to his infant state but still including a commander 's baton in his right hand a shoulder sash and a sword hilt in his left hand -rrb-",
+      "the dwarf holds an apple and a rattle to contrast with the heir to the most powerful monarchy in europe who is shown as already in military training and not needing these usual children 's attributes",
+      "the prince 's static posture in contrast to the dynamism of the dwarf 's figure turning to contemplate the prince has caused some art historians to think that the painting was originally only of the prince with the dwarf added later"
+    ]
+  },
+  {
+    "image_id": 223,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "in medieval times cockaigne was a mythical land of plenty but bruegel 's depiction of cockaigne and its residents is not meant to be a flattering one",
+      "he chooses rather a comic illustration of the spiritual emptiness believed to derive from gluttony and sloth two of the seven deadly sins",
+      "in the painting a clerk a peasant and a soldier lie dozing on the ground underneath a table bound to a tree",
+      "the clerk 's book papers ink and pen lie idle as do the peasant 's flail and the soldier 's lance and gauntlet",
+      "a half-eaten egg in its shell runs between the peasant and the clerk",
+      "the table attached to the tree is laden with partly consumed food and drink",
+      "behind the tree a roasted fowl lays itself upon a silver platter implying that it is ready to be eaten and a roasted pig runs about with a carving knife already slipped under its skin",
+      "on the left a knight emerges from a lean-to whose roof is covered in dishes of pie and pastry with an open mouth waiting for a roasted pigeon to fly in -lrb- the pigeon was accidentally removed during restoration work -rrb-",
+      "on the right and behind the main action a man clutching a spoon forces his way out of a large cloud of pudding having eaten his way through it he reaches for the bent branch of a tree in order to lower himself into cockaigne",
+      "the fence enclosing the main scene behind the dozing trio is made of interwoven sausages",
+      "a partly eaten wheel of cheese and a bush -lrb- or tower -rrb- of loaves of bread are on the left and right of the scene respectively"
+    ]
+  },
+  {
+    "image_id": 224,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "christ bearing the cross is a 1526 painting by lorenzo lotto now in the louvre"
+    ]
+  },
+  {
+    "image_id": 225,
+    "test": "the painting depicts a group of young women sitting on a couch in a room",
+    "refs": [
+      "the painting depicts a scene in monet 's french pond showing light reflecting off the water with water lilies on the surface",
+      "one of monet 's larger paintings it shows the beauty of the sunset reflecting off the water"
+    ]
+  },
+  {
+    "image_id": 226,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "the painting portrays christ at the center of the scene standing with joined hands",
+      "at the left are three angels with christ 's garments in red and blue colors which he will use after the baptism",
+      "the scene is completed by an angelic choir in the sky and a generic oriental city on a spur in the left behind the angels while another one is visible in the far background"
+    ]
+  },
+  {
+    "image_id": 227,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the portrait of guidobaldo da montefeltro is a picture by the italian renaissance artist raphael dating from around 1506 and housed in the uffizi gallery florence"
+    ]
+  },
+  {
+    "image_id": 228,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "there is a carved depiction of the last judgement at the top of the frame and it also displays the donors coats of arms",
+      "the crowded altarpiece depicts the trinity with god the father holding a crucifix with a still-alive jesus",
+      "above them in a cloud of light surrounded by cherubims is the holy spirit in the form of a dove",
+      "god the father wears an imperial crown and a wide gilt cloak lined in green and supported by angels",
+      "below the human multitudes are divided between religious men and women -lrb- left led by the pope -rrb- and laymen led by the holy roman emperor a division similar to that already adopted by d\u00fcrer in the feast of the rosary -lrb- 1506 -rrb-",
+      "at left near a cardinal who is perhaps interceding for him is the aged matth\u00e4us landauer wearing rich garments and putting down his hat",
+      "a peasant with one of his tools represents the poor classes",
+      "on the right is an enigmatic queen whose face is entirely hidden by a veil which leaves only the eyes visible",
+      "the lower section is occupied by a large landscape with the dawn above a lake among hills inspired by landscapes by albrecht altdorfer and joachim patinir"
+    ]
+  },
+  {
+    "image_id": 229,
+    "test": "the painting depicts a group of people walking through a field of wheat",
+    "refs": [
+      "mountainous landscape -lrb- c. 1675-1679 -rrb- is an oil on canvas painting by the dutch landscape painter jacob van ruisdael",
+      "a dark rocky landscape is intersected by a river on which are a raft of timber and a small sailing-boat",
+      "to the right on the farther bank are a cottage a pile of timber and a mill",
+      "near the centre is a castle on a rocky hill",
+      "farther to the left in the distance is a lofty conical hill the top of which is hidden in cloud",
+      "probably an evening effect but very much darkened by time"
+    ]
+  },
+  {
+    "image_id": 230,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "they show the virgin mary and archangel gabriel in an annunciation scene painted in grisaille which because of their near-monochrome colouring give the impression that the figures are sculpted",
+      "the three inner panels are set in an ecclesiastical interior",
+      "in the central inner panel mary is seated and holds the christ child on her lap",
+      "on the left hand wing archangel michael presents a kneeling donor while on the right st. catherine of alexandria stands reading a prayer book",
+      "the interior panels are outlined with two layers of painted bronze frames inscribed with mostly latin lettering"
+    ]
+  },
+  {
+    "image_id": 231,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "before leaving her in troezen to return to athens aegeus left his sandals and sword under a heavy boulder and instructed that if aethra 's son could lift the boulder and recover the items under it he must come to athens to athens to meet his father"
+    ]
+  },
+  {
+    "image_id": 232,
+    "test": "the painting depicts a group of people standing around a table",
+    "refs": [
+      "a second book of which only a corner is visible is inscribed maro indicating the latin poet publius vergilius maro better known as virgil",
+      "ugolino 's left arm is supported by a work by pietro bembo whose sonnets were written in the vernacular"
+    ]
+  },
+  {
+    "image_id": 233,
+    "test": "the painting depicts a group of people walking through a forest",
+    "refs": [
+      "executed in a cubist style the work is notable in its fusing of foreground and background the multiple perspective also called simultaneity or multiplicity successive views at various moments in time of the elements the freely flowing brushstrokes and the dark lines and arcs delineating juxtaposing color planes or surfaces"
+    ]
+  },
+  {
+    "image_id": 234,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it shows the blessed virgin mary sitting on a wooden throne with the child christ on her lap",
+      "on her right john the baptist stands on her left saint nicholas is reading"
+    ]
+  },
+  {
+    "image_id": 235,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "margaret is shown in three-quarter view that is her body almost directly facing the viewer but not quite",
+      "she is set against a flat black and featureless background wearing an elegant red woolen gown with grey fur lining -lrb- in the medieval period fur often represented female sexuality -rrb- probably from squirrel in the neck and cuffs",
+      "her horned wimple is decorated with fine lace",
+      "her left eye shows evidence of a squint a feature unusually evident in northern europeans of the era",
+      "her head is out of proportion to her body and her forehead unusually and fashionably high a device which allows the artist to concentrate on the facial features of his wife",
+      "in addition the geometric pattern formed by her head-dress arms and the v of her neck-line allows her face to dominate the image"
+    ]
+  },
+  {
+    "image_id": 236,
+    "test": "the painting depicts a group of people in a rural setting",
+    "refs": [
+      "it was made in january or february 1884 showing van gogh 's father 's small church with hedge and bare trees"
+    ]
+  },
+  {
+    "image_id": 237,
+    "test": "the painting depicts a group of children playing in a field",
+    "refs": [
+      "the painting portrays plains indian chiefs who among many others traveled to washington to meet with the president to negotiate native american territorial rights with the government"
+    ]
+  },
+  {
+    "image_id": 238,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "frederick is standing gustav is sitting to the left and charles is to the right"
+    ]
+  },
+  {
+    "image_id": 239,
+    "test": "in front of her is a vase of flowers",
+    "refs": [
+      "infanta margarita in a white and silver dress or infanta margarita in a white dress is a 1656 painting by diego vel\u00e1zquez one of his five portraits of margaret theresa of spain"
+    ]
+  },
+  {
+    "image_id": 240,
+    "test": "the painting depicts a group of people walking through a field of wheat",
+    "refs": [
+      "it depicts three young women two of whom are twins on a ledge surrounded by peculiar cloud formations",
+      "the women 's mouths are open as they reach out toward a light source outside of the picture 's frame",
+      "their eyes are wide open but completely blank"
+    ]
+  },
+  {
+    "image_id": 241,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the painting shows clotilde wearing a black dress in their madrid home",
+      "in the background sorolla has rendered a smaller version of one of his earlier paintings"
+    ]
+  },
+  {
+    "image_id": 242,
+    "test": "the painting depicts a woman sitting on a couch in front of a window",
+    "refs": [
+      "when open its three half-length panels reveal from left to right john the baptist the virgin mary with jesus and saint john the evangelist and on the right mary magdalene"
+    ]
+  },
+  {
+    "image_id": 243,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the young man with an apple is a painting by the italian high renaissance painter raphael -lrb- 1505 -rrb-"
+    ]
+  },
+  {
+    "image_id": 244,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the portrait of a cardinal is a painting by the italian renaissance artist raphael",
+      "the contrasts are striking between the red of his hat whiteness of his sleeve and his face"
+    ]
+  },
+  {
+    "image_id": 245,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "although she is portrayed as a beautiful much younger woman the viewer is left in no doubt as to her elevated social status and cultural sophistication",
+      "she has a small rounded mouth large oval eyes and dark arched eyebrows",
+      "she has pale skin but rosy cheeks and a dimple at the end of her chin",
+      "there is a duality in her facial expression although she has soft features her strong and forceful personality is evident accentuated by the fact that her body is stiff and she sits upright giving her an air of the imperious",
+      "her red hair is bound in an updo and she wears a sumptuous balzo headdress",
+      "her gown is richly embroidered with velvet over a ribbon-edged guimp",
+      "she is holding an ermine zibellino and her sleeves are decorated with gold and silver brocade"
+    ]
+  },
+  {
+    "image_id": 246,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "it depicts a woman wearing a black lace veil on her head and a dark dress with a low-cut bodice"
+    ]
+  },
+  {
+    "image_id": 247,
+    "test": "the painting depicts a young woman sitting at a table with a glass of wine in her lap",
+    "refs": [
+      "in the middle of the little fore-court paved with blue and white tiles of a house on the right sits an elderly lady facing half-right",
+      "she wears a black jacket a red skirt and a white apron she has a green cushion on her lap and a letter in her hand with a basket of needlework beside her",
+      "a servant-girl dressed in a white bodice and a violet skirt tucked up over a blue petticoat has come out of the house-door on the right and shows her some fish in a brass pail",
+      "to the left through the half-opened door of a trellis separating the court from the front garden a brick path leads to a door in the wall opening on a canal",
+      "on the opposite side of it is the entrance to a house before which a young couple are walking",
+      "farther to the right by the canal is a gabled house which is visible between a tree on the canal bank and a bush in the garden and overtops the garden-wall"
+    ]
+  },
+  {
+    "image_id": 248,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "moonlight depicts a nighttime seascape outside of homer 's studio in portland maine",
+      "the tiny spot of red pigment on the horizon denotes the lighthouse on wood island to the south of prouts neck scarborough maine"
+    ]
+  },
+  {
+    "image_id": 249,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "in this self-portrait van gogh is shown wearing a blue cap with black fur and a green overcoat with a bandage covering his ear and extending under his chin",
+      "he is in a traditional three-quarter view and his forward gaze falls slightly to the right out of the frame",
+      "behind him is an open window assumedly letting in a winter breeze a canvas on an easel with a few indistinguishable marks as well as a japanese woodblock print",
+      "this woodblock print has been identified as a geishas in a landscape published by sato tokyo in the 1870s",
+      "the skin tone is muted with green and yellowish tones",
+      "the bandage covering van gogh 's ear in this painting alludes to his most famous conflict"
+    ]
+  },
+  {
+    "image_id": 250,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "it is a group portrait depicting the 11 representatives of the governments of england spain and the spanish netherlands seated around a conference table probably in old somerset house"
+    ]
+  },
+  {
+    "image_id": 251,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "it shows wautier beginning her painting having sketched the outline of the head of a portrait",
+      "a watch with a pink ribbon attached to it sits on the easel but the precise reason for its inclusion is not known"
+    ]
+  },
+  {
+    "image_id": 252,
+    "test": "the painting depicts a scene from the life of the virgin mary",
+    "refs": [
+      "it depicts the marriage between joseph and mary and is now in the mus\u00e9e des beaux-arts of caen france",
+      "the wide perspective of the picture with at its centre an octagonal edifice and the aligned composition of the figures on the sides is strongly related to the perugino 's christ giving the keys to st. peter at the sistine chapel",
+      "the painting prominently displays the virgin 's engagement ring which was then kept at the cathedral as a holy relic"
+    ]
+  },
+  {
+    "image_id": 253,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "it depicts a scene from a roman legend about a dispute between two warring cities rome and alba longa and stresses the importance of patriotism and masculine self-sacrifice for one 's country",
+      "instead of the two cities sending their armies to war they agree to choose three men from each city the victor in that fight will be the victorious city",
+      "the three brothers all of whom appear willing to sacrifice their lives for the good of rome are shown saluting their father who holds their swords out for them",
+      "aside from the three brothers depicted david also represents in the bottom right corner a woman crying whilst sitting down",
+      "she is camilla a sister of the horatii brothers who is also betrothed to one of the curiatii fighters and thus she weeps in the realisation that in any case she will lose someone she loves"
+    ]
+  },
+  {
+    "image_id": 254,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "charles i with m. de st antoine is an oil painting on canvas by the flemish painter anthony van dyck depicting charles i on horseback accompanied by his riding master pierre antoine bourdon seigneur de st antoine",
+      "charles is depicted as a chivalrous knight and sovereign riding a large muscular white horse possibly a lipizzaner under a neoclassical triumphal arch from which is fall hangings of green silk",
+      "he is clad in parade armour with the blue sash of the order of the garter and carries a baton to symbolise his command of the military",
+      "charles is depicted almost alone perhaps alluding to the period of his personal rule without parliament and is viewed from below as in van dyck 's 1635 painting charles i at the hunt which disguises the king 's lack of stature",
+      "to the right stands his riding master pierre antoine bourdon seigneur de st antoine -lrb- with a ribbon around his neck possibly of the order of saint lazarus -rrb- who looks up at the king while holding his helmet",
+      "a large royal coat of arms of the house of stuart stands to the lower left of the painting of four quarters first and fourth the fleur-de-lys of france quartering the three lions of england second the double tressured lion of scotland and third the harp of ireland surmounted by a large crown"
+    ]
+  },
+  {
+    "image_id": 255,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "the christ child holds a golden apple perhaps referring to the judgement of paris and to mary as the new venus",
+      "the curtain remains but the sky was hidden in the 16th century by two gold stripes"
+    ]
+  },
+  {
+    "image_id": 256,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "intended to illustrate the virtues of honour and chastity it depicts a scene from edmund spenser 's the faerie queene in which the female warrior britomart slays the evil magician busirane and frees his captive the beautiful amoret",
+      "in spenser 's original poem amoret has been tortured and mutilated by the time of her rescue but etty disliked the depiction of violence and portrayed her as unharmed",
+      "despite being a depiction of an occult ritual a violent death a partly nude woman and strongly implied sexual torture britomart redeems faire amoret was uncontroversial on its first exhibition in 1833 and was critically well received"
+    ]
+  },
+  {
+    "image_id": 257,
+    "test": "on the right side of the painting is a statue of george washington",
+    "refs": [
+      "the battle of waterloo",
+      "it depicts a scene from the battle of waterloo on 18 june 1815 with squares of red-coated infantry from sir thomas picton 's british 5th division to the left being charged by cavalrymen of the french 5th and 10th cuirassiers in blue uniforms to the right",
+      "the main british unit is one of highland infantry with the colour party and a mounted officer taking refuge in the centre of the square",
+      "abandoned cannon lie in the foreground and middle distance"
+    ]
+  },
+  {
+    "image_id": 258,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "the indian church -lrb- renamed church at yuquot village in 2018 by the art gallery of ontario -rrb- is a 1929 painting by canadian artist emily carr"
+    ]
+  },
+  {
+    "image_id": 259,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "the painting depicts office workers walking along busy collins street in melbourne after finishing work for the day blank-faced office workers hurry by like sleep-walkers thinking only of the pubs or their homes in the suburbs"
+    ]
+  },
+  {
+    "image_id": 260,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "nude sitting on a divan -lrb- the beautiful roman woman -rrb- is an oil on canvas painting by italian artist amedeo modigliani depicting a partially draped woman seated with crossed legs against a warm red background",
+      "nude"
+    ]
+  },
+  {
+    "image_id": 261,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "in this hand-painted dream photograph as dal\u00ed generally called his paintings there is a seascape of distant horizons and calm waters perhaps port lligat amidst which gala is the subject of the scene",
+      "next to the naked body of the sleeping woman which levitates above a flat rock that floats above the sea dal\u00ed depicts two suspended droplets of water and a pomegranate a christian symbol of fertility and resurrection",
+      "above the pomegranate flies a bee an insect that traditionally symbolizes the virgin",
+      "in the upper left of the painting what seems to be a yelloweye rockfish bursts out of the pomegranate and in turn spews out a tiger that then spews out another tiger and a rifle with a bayonet that is about to sting gala in the arm",
+      "above them is dal\u00ed 's first use of an elephant with long flamingo legs found in his later compositions such as the temptation of st. anthony",
+      "the elephant carries on its back an obelisk inspired by bernini 's elephant and obelisk in rome 's piazza santa maria sopra minerva"
+    ]
+  },
+  {
+    "image_id": 262,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "an intentionally cramped and crowded composition it shows a huge group of people in various states of undress gathering on the bank to watch the ship 's arrival",
+      "buoyed by its reception etty devoted much of the next decade to creating further history paintings containing nude figures becoming renowned for his combination of nudity and moral messages"
+    ]
+  },
+  {
+    "image_id": 263,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "it shows the chef and owner of a restaurant and hotel paul antoine graff who was the landlord of monet during his visit to pourville on the english channel",
+      "monsieur paul has turned his head towards his right shoulder and looks into the direction of the left edge of the painting",
+      "his dark eyes do not focus on anything specific and he appears to look just ahead of himself into the emptiness",
+      "his scrubby grey and black full beard is part of his appearance and nearly covers the protruding chin and the mouth with closed lips"
+    ]
+  },
+  {
+    "image_id": 264,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "the muscular and nude flea is depicted using its jutting tongue to gorge on a bowl of blood",
+      "part human part vampire and part reptile the beast strides from right to left between heavy and richly patterned curtains",
+      "in his left hand he holds an acorn and in his right a thorn both items drawn from the tradition of fairy iconography",
+      "his massive neck is similar to that of a bull and holds a disproportionally small head marked by glaring eyes and open jaws and a venomous slithering tongue",
+      "according to the art critic jonathan jones the flea is depicted as an evil gothic grotesque stalking through a starry realm between stage curtains ghost of a flea is distinguished by its innovative use of gold leaf",
+      "beneath the curtain folds the flesh of the flea and bright stars blake placed a thin foil of white gold which he made from gold-silver alloy"
+    ]
+  },
+  {
+    "image_id": 265,
+    "test": "the painting depicts a scene from the bible",
+    "refs": [
+      "while the scene is crowded each person in the image has a specific facial expression for the most part wracked with emotion",
+      "this emotion is shown in the weeping open mourning of the women and the more pensive silently tense expressions of inner grief displayed by the men",
+      "jesus mother mary is portrayed in the work as unconscious having fainted from the overwhelming grief and sadness",
+      "she is portrayed as physically and likely mentally supported by the other bystanders",
+      "jesus himself is portrayed in a realistic fashion with his body slumped and twisted rather unsettlingly as he is carried down the cross displaying the lifeless quality of his form",
+      "jesus physical body shape is very rounded almost ruben-esque raising the question of whether rembrandt was influenced by rubens notably voluptuous figures",
+      "also evident on the body are the marks of the thorn crown and the stigmata on jesus hands and feet",
+      "the lightest and brightest areas are on jesus body promoting it as the focal point of the piece and the darkest area in the unlit nearly black inky background",
+      "various torches and candles provide the light shed on the figures as the scene takes place at night",
+      "although varying in degree light specifically illuminates and delineates three main groups",
+      "these groups are jesus and the people carrying him women laying out what appears to be a burial cloth and mary and her supporters"
+    ]
+  },
+  {
+    "image_id": 266,
+    "test": "the painting depicts a group of people sitting at a table",
+    "refs": [
+      "the man with the golden helmet -lrb- c. 1650 -rrb- is an oil on canvas painting formerly attributed to the dutch painter rembrandt and today considered to be a work by someone in his circle",
+      "an elderly man with a gilt helmet",
+      "he is turned a little to the right his eyes are cast down",
+      "he wears a dark coat with purplish-red sleeves",
+      "on his head is a richly wrought gilt helmet with ear-pieces and a plume of short white and red feathers",
+      "dark background",
+      "strong light falls from the left at top on tin helmet and touching the face as it passes on the breast"
+    ]
+  },
+  {
+    "image_id": 267,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "saint mark john the evangelist saint luke francis of assisi with the stigmata louis of toulouse as a young bishop anthony the great augustine of hippo and john the baptist"
+    ]
+  },
+  {
+    "image_id": 268,
+    "test": "the painting depicts a group of people walking through a forest",
+    "refs": [
+      "the prominence in his paintings of collarless free range dogs has been the subject of much speculation as to their symbolic or metaphorical meaning"
+    ]
+  },
+  {
+    "image_id": 269,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the virgin and child is an oil painting of around 1520 by the flemish painter gerard david now in the museum boijmans van beuningen"
+    ]
+  },
+  {
+    "image_id": 270,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "seated in front of his easel palette in hand hogarth eagerly works at his painting hogarth expressly wanted a self-portrait in which he was depicted in the middle of painting a piece rather than in a static pose",
+      "leaning against the right leg of the easel is hogarth 's the analysis of beauty a text which was written to complement this particular piece"
+    ]
+  },
+  {
+    "image_id": 271,
+    "test": "the painting depicts a scene from the life of saint peter of alexandria",
+    "refs": [
+      "returning to a theme he had previously painted in a work now in the hermitage the painting depicts saints peter and paul two of the apostles of jesus",
+      "the placement of the hands of the saint crossed without actually touching symbolizes a possible disagreement between the two",
+      "the older peter on left is gesturing towards paul suggesting a sign of surrender in the disagreement"
+    ]
+  },
+  {
+    "image_id": 272,
+    "test": "the painting depicts a young woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the central image is a tightly cropped and intimate portrayal mary cradling the infant jesus who plays with a red rosary tied around his neck",
+      "the center panel bears evidence that it was slightly planed down to fit into the frame",
+      "mary is shown as be very young likely no older than 15",
+      "she has blue green-eyes and reddish blond hair which is decorated with a green striped headband studded with an ornament jeweled with a ruby two pearls and a diamond",
+      "she wears a long blue mantle which veils her face and drapes over her purple under-dress and blue fur-lined dress",
+      "the child has short blond hair and blue eyes and is cradled by mary 's hand her long fine fingers are shown reaching under his legs and across the lower chest",
+      "he is shown sitting on white cloth toying with a string of red coral rosary beads which cast a shadow over his chest",
+      "the beads are strung on a green chord which drapes over his shoulder",
+      "areas of the central panel have faded or are damaged especially around the child 's cheek and across the virgin 's veil",
+      "as a result it was heavily over-painted before acquired by layard",
+      "while the background of the center panel is painted in solid black the black of the outer wings is mixed with red earth",
+      "the single oak boards of the outer wings are both of vertical grain and it is likely that the hinges are original 1500 c.",
+      "they wings are still shuttable via an outer hook which fits with a ring on the back of the left panel",
+      "both nail and hook seem to be original"
+    ]
+  },
+  {
+    "image_id": 273,
+    "test": "the painting depicts a scene from the life of thomas eakins",
+    "refs": [
+      "emerging from the undefined forms is the suggestion of misty mountains in the background",
+      "in the foreground are cliffs and bushes and the triangular roofline and sloping banner for a wine shop with vertical lines forming a fence",
+      "below is indicated the flat surface of a body of water with two people to the right in a rowing boat"
+    ]
+  },
+  {
+    "image_id": 274,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "portrait of a young man is a painting by raphael",
+      "if it is a self-portrait no hint is given of raphael 's profession the portrait shows a richly dressed and confidently poised young man"
+    ]
+  },
+  {
+    "image_id": 275,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "it portrays a man stabbing his wife after she has been unjustly accused of adultery",
+      "when the man discovers the truth he begs for pardon to st. anthony who resuscitates the woman -lrb- this scene is portrayed in smaller size on the right -rrb-"
+    ]
+  },
+  {
+    "image_id": 276,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "landscape with a church at twilight is an oil painting created in 1883 by vincent van gogh"
+    ]
+  },
+  {
+    "image_id": 277,
+    "test": "the painting depicts a woman sitting on a chair in front of a window",
+    "refs": [
+      "the painting shows a pipe",
+      "the famous pipe"
+    ]
+  },
+  {
+    "image_id": 278,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "beside a broad moat high above the circular scarp of a ruined bastion stands a windmill with some low cottages",
+      "the path from the mill leads on the left over a little bridge across a sluice to a landing-post in the foreground",
+      "a woman with a child goes down to the water a man pushes a barrow upwards",
+      "in the centre foreground a woman at the water 's edge is washing linen",
+      "a man behind watches her",
+      "from the right approaches a ferry-boat with the mast down rowed by a man",
+      "to the right on the farther bank amid dense groves of trees are some cows and beyond them a cottage",
+      "evening light",
+      "the last rays of the sun illumine the right half of the sky and envelop the mill in their radiant glow"
+    ]
+  },
+  {
+    "image_id": 279,
+    "test": "the painting depicts a scene from the life of george washington",
+    "refs": [
+      "it depicts one of the many people 's rebellions against the french occupation of spain that sparked the peninsular war"
+    ]
+  },
+  {
+    "image_id": 280,
+    "test": "the painting depicts a group of people gathered around a table",
+    "refs": [
+      "it depicts christ standing on a double basement keeping the cross",
+      "behind him is a damask cloth held by two angels and at the sides a landscape inspired to the venetian hills the castle on the right is similar to that of udine",
+      "in the foreground are four angels with the instruments of the passion from the left the holy lance the nails from the cross the sticks of the flagellation and the holy sponge",
+      "on the cross is the crown of thorns and the inscription inri",
+      "blood rays spring up from christ 's wounds ending in the holy chalice and turning themselves into the sacramental bread",
+      "the sacrifice of christ is also alluded to by the deer which is being slaughtered by a leopard on the lawn on the right"
+    ]
+  },
+  {
+    "image_id": 281,
+    "test": "the painting depicts a young woman sitting on a chair in front of a window",
+    "refs": [
+      "georgia o'keeffe is best known for her close-up or large-scale flower paintings which she painted from the mid-1920s through the 1950s"
+    ]
+  },
+  {
+    "image_id": 282,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the white farmhouse and a smaller outbuilding are depicted at sunset",
+      "in the foreground are also two leafless trees and a stream of water which runs from a nearby pool"
+    ]
+  },
+  {
+    "image_id": 283,
+    "test": "the painting depicts a group of children playing with a frisbee",
+    "refs": [
+      "in this variant he shows the christ child in mary 's lap",
+      "to the left is mary 's mother st anne whilst to the right are saint joseph and the infant john the baptist"
+    ]
+  },
+  {
+    "image_id": 284,
+    "test": "the painting depicts a young woman sitting on a couch in front of a window",
+    "refs": [
+      "another female nude by courbet from around the same time is female nude sleeping by a stream -lrb- detroit institute of arts -rrb-"
+    ]
+  },
+  {
+    "image_id": 285,
+    "test": "it shows the statue of liberty in front of a window",
+    "refs": [
+      "working on the statue of liberty also known as statue of liberty is a 1946 oil painting by american illustrator norman rockwell showing workmen cleaning the torch held aloft by the statue of liberty in new york harbor"
+    ]
+  },
+  {
+    "image_id": 286,
+    "test": "the painting depicts a woman sitting on a couch with her back to the spectator",
+    "refs": [
+      "the painting is traditionally interpreted as courbet greeted by his patron alfred bruyas his servant calas and his dog while traveling to montpellier"
+    ]
+  }
+]
