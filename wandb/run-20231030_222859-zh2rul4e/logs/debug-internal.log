@@ -1,0 +1,38 @@
+2023-10-30 22:28:59,514 INFO    StreamThr :28088 [internal.py:wandb_internal():86] W&B internal server running at pid: 28088, started at: 2023-10-30 22:28:59.513150
+2023-10-30 22:28:59,516 DEBUG   HandlerThread:28088 [handler.py:handle_request():146] handle_request: status
+2023-10-30 22:28:59,517 INFO    WriterThread:28088 [datastore.py:open_for_write():85] open: D:\ResearchProject\Artwork-Interpretation\wandb\run-20231030_222859-zh2rul4e\run-zh2rul4e.wandb
+2023-10-30 22:28:59,521 DEBUG   SenderThread:28088 [sender.py:send():380] send: header
+2023-10-30 22:28:59,568 DEBUG   SenderThread:28088 [sender.py:send():380] send: run
+2023-10-30 22:29:00,334 INFO    SenderThread:28088 [dir_watcher.py:__init__():211] watching files in: D:\ResearchProject\Artwork-Interpretation\wandb\run-20231030_222859-zh2rul4e\files
+2023-10-30 22:29:00,335 INFO    SenderThread:28088 [sender.py:_start_run_threads():1122] run started: zh2rul4e with start time 1698665339.47148
+2023-10-30 22:29:00,351 DEBUG   HandlerThread:28088 [handler.py:handle_request():146] handle_request: check_version
+2023-10-30 22:29:00,351 DEBUG   SenderThread:28088 [sender.py:send_request():407] send_request: check_version
+2023-10-30 22:29:00,632 DEBUG   HandlerThread:28088 [handler.py:handle_request():146] handle_request: run_start
+2023-10-30 22:29:00,674 DEBUG   HandlerThread:28088 [system_info.py:__init__():32] System info init
+2023-10-30 22:29:00,674 DEBUG   HandlerThread:28088 [system_info.py:__init__():47] System info init done
+2023-10-30 22:29:00,675 INFO    HandlerThread:28088 [system_monitor.py:start():194] Starting system monitor
+2023-10-30 22:29:00,675 INFO    SystemMonitor:28088 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2023-10-30 22:29:00,675 INFO    HandlerThread:28088 [system_monitor.py:probe():214] Collecting system info
+2023-10-30 22:29:00,683 INFO    SystemMonitor:28088 [interfaces.py:start():190] Started cpu monitoring
+2023-10-30 22:29:00,684 INFO    SystemMonitor:28088 [interfaces.py:start():190] Started disk monitoring
+2023-10-30 22:29:00,685 INFO    SystemMonitor:28088 [interfaces.py:start():190] Started gpu monitoring
+2023-10-30 22:29:00,685 INFO    SystemMonitor:28088 [interfaces.py:start():190] Started memory monitoring
+2023-10-30 22:29:00,695 INFO    SystemMonitor:28088 [interfaces.py:start():190] Started network monitoring
+2023-10-30 22:29:00,716 DEBUG   HandlerThread:28088 [system_info.py:probe():196] Probing system
+2023-10-30 22:29:00,718 DEBUG   HandlerThread:28088 [system_info.py:_probe_git():181] Probing git
+2023-10-30 22:29:00,727 ERROR   gpu       :28088 [interfaces.py:monitor():144] Failed to sample metric: Not Supported
+2023-10-30 22:29:00,889 DEBUG   HandlerThread:28088 [system_info.py:_probe_git():189] Probing git done
+2023-10-30 22:29:00,889 DEBUG   HandlerThread:28088 [system_info.py:probe():244] Probing system done
+2023-10-30 22:29:00,889 DEBUG   HandlerThread:28088 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.22621-SP0', 'python': '3.9.16', 'heartbeatAt': '2023-10-30T11:29:00.716051', 'startedAt': '2023-10-30T11:28:59.459474', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'D:\\ResearchProject\\Artwork-Interpretation\\KALE.py', 'codePathLocal': 'KALE.py', 'codePath': 'KALE.py', 'git': {'remote': 'https://github.com/Yanbei-Jiang/Artwork-Interpretation.git', 'commit': '69de7a7b8e062be64e9297d34c0c2b2602909f92'}, 'email': 'yanbeij@student.unimelb.edu.au', 'root': 'D:/ResearchProject/Artwork-Interpretation', 'host': 'LAPTOP-6U5B3RBS', 'username': 'Yanbei Jiang', 'executable': 'D:\\anaconda\\envs\\name\\python.exe', 'cpu_count': 8, 'cpu_count_logical': 16, 'cpu_freq': {'current': 1990.0, 'min': 0.0, 'max': 3201.0}, 'cpu_freq_per_core': [{'current': 1990.0, 'min': 0.0, 'max': 3201.0}], 'disk': {'/': {'total': 343.22753524780273, 'used': 136.1888771057129}}, 'gpu': 'NVIDIA GeForce GTX 1650', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce GTX 1650', 'memory_total': 4294967296}], 'memory': {'total': 15.355525970458984}}
+2023-10-30 22:29:00,889 INFO    HandlerThread:28088 [system_monitor.py:probe():224] Finished collecting system info
+2023-10-30 22:29:00,889 INFO    HandlerThread:28088 [system_monitor.py:probe():227] Publishing system info
+2023-10-30 22:29:00,889 DEBUG   HandlerThread:28088 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-10-30 22:29:00,891 DEBUG   HandlerThread:28088 [system_info.py:_save_pip():68] Saving pip packages done
+2023-10-30 22:29:00,891 DEBUG   HandlerThread:28088 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-10-30 22:29:01,340 INFO    Thread-16 :28088 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ResearchProject\Artwork-Interpretation\wandb\run-20231030_222859-zh2rul4e\files\requirements.txt
+2023-10-30 22:29:01,340 INFO    Thread-16 :28088 [dir_watcher.py:_on_file_created():271] file/dir created: D:\ResearchProject\Artwork-Interpretation\wandb\run-20231030_222859-zh2rul4e\files\conda-environment.yaml
+2023-10-30 22:29:02,694 INFO    cpu       :28088 [interfaces.py:monitor():140] Process cpu has exited.
+2023-10-30 22:29:02,694 DEBUG   SystemMonitor:28088 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2023-10-30 22:29:02,695 DEBUG   SystemMonitor:28088 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2023-10-30 22:29:02,695 DEBUG   SystemMonitor:28088 [system_monitor.py:_start():183] Publishing last batch of metrics
+2023-10-30 22:29:03,665 INFO    MainThread:28088 [internal.py:handle_exit():76] Internal process exited
