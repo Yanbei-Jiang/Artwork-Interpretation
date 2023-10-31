@@ -302,7 +302,7 @@ def main(args, config):
         if args.evaluate:
             break
 
-        vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+        vqa_result = evaluation(model, val_loader, tokenizer, device, config)
         result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
         if utils.is_main_process():
             result = cal_metric(result_file)
@@ -333,9 +333,9 @@ def main(args, config):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', default='./configs/caption_mplug_large.yaml')
-    parser.add_argument('--checkpoint', default='mplug_large_v2.pth')
-    parser.add_argument('--output_dir', default='/data/gpfs/projects/punim1996/model_checkpoint/semart_contextual_without_technique')
+    parser.add_argument('--config', default='./configs/config.yaml')
+    parser.add_argument('--checkpoint', default='./model_checkpoint/mplug_large_v2.pth')
+    parser.add_argument('--output_dir', default='./output/semart_contextual_processed')
     parser.add_argument('--evaluate', action='store_true')
     parser.add_argument('--text_encoder', default='bert-base-uncased')
     parser.add_argument('--text_decoder', default='bert-base-uncased')

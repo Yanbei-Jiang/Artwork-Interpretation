@@ -16,7 +16,7 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
 
-from models.model_caption_new_semart_metadata import MPLUG
+from models.model_caption import MPLUG
 from models.vit import interpolate_pos_embed, resize_pos_embed
 from models.tokenization_bert import BertTokenizer
 
@@ -53,10 +53,10 @@ def train(model, data_loader, optimizer, tokenizer, epoch, warmup_steps, device,
             caption = [config['prompt'] + each+config['eos'] for each in caption]
         else:
             caption = [each+config['eos'] for each in caption]
-        # question_input = [config['bos']+" "+each for each in metadata]
+        question_input = [config['bos']+" "+each for each in metadata]
 
-        caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt", add_special_tokens=False).to(device)
-        metadata = tokenizer(metadata, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
+        caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
+        question_input = tokenizer(question_input, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
         # question_input = caption.input_ids[0,0].repeat(caption.input_ids.size(0), 1)
 
         if epoch > 0 or not config['warm_up']:
@@ -64,7 +64,7 @@ def train(model, data_loader, optimizer, tokenizer, epoch, warmup_steps, device,
         else:
             alpha = config['alpha'] * min(1, i / len(data_loader))
 
-        loss = model(image, metadata, caption, train=True)
+        loss = model(image, question_input, caption, train=True)
 
         if accum_steps > 1:
             loss = loss / accum_steps
@@ -91,7 +91,7 @@ def train(model, data_loader, optimizer, tokenizer, epoch, warmup_steps, device,
         if epoch == 0 and i % step_size == 0 and i <= warmup_iterations:
             scheduler.step(i // step_size)
         
-        del image, metadata, caption,loss 
+        del image, question_input,caption,loss 
 
             # gather the stats from all processes
     metric_logger.synchronize_between_processes()
@@ -112,29 +112,17 @@ def evaluation(model, data_loader, tokenizer, device, config):
 
 
     answer_input = None
-    for n, (image, caption, metadata, image_ids, gold_caption) in enumerate(metric_logger.log_every(data_loader, print_freq, header)):        
+    for n, (image, caption, metadata_list, image_ids, gold_caption) in enumerate(metric_logger.log_every(data_loader, print_freq, header)):        
         image = image.to(device,non_blocking=True)             
         caption = [each+config['eos'] for each in caption]
-        # question_input = [config['bos']+" "+each for each in metadata_list]
-        caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt", add_special_tokens=False).to(device)
-        metadata = tokenizer(metadata, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
-        topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context = model(image, metadata, caption, train=False)
+        question_input = [config['bos']+" "+each for each in metadata_list]
+        caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
+        question_input = tokenizer(question_input, padding='longest', truncation=True, max_length=args.max_input_length, return_tensors="pt").to(device)
+        topk_ids, topk_probs = model(image, question_input, caption, train=False)
 
-        for image_id, topk_id_content, topk_prob_content, topk_id_form, topk_prob_form, topk_id_context, topk_prob_context, gold_caption_dict in zip(image_ids, topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context, gold_caption):
-            for type in gold_caption_dict:
-                gold_caption_list = gold_caption_dict[type]
-                if gold_caption_list:
-                    if type == "content":
-                        ans = tokenizer.decode(topk_id_content[0]).replace("[SEP]", "").replace("[CLS]", "").replace("[PAD]", "").replace("<content>", "").replace("<form>", "").replace("<context>", "").strip() 
-                        gold_caption_list = [i.replace("<content>", "").strip() for i in gold_caption_list]
-                    elif type == "form":
-                        ans = tokenizer.decode(topk_id_form[0]).replace("[SEP]", "").replace("[CLS]", "").replace("[PAD]", "").replace("<content>", "").replace("<form>", "").replace("<context>", "").strip()
-                        gold_caption_list = [i.replace("<form>", "").strip() for i in gold_caption_list]
-                    elif type == "context":
-                        ans = tokenizer.decode(topk_id_context[0]).replace("[SEP]", "").replace("[CLS]", "").replace("[PAD]", "").replace("<content>", "").replace("<form>", "").replace("<context>", "").strip()
-                        gold_caption_list = [i.replace("<context>", "").strip() for i in gold_caption_list]
-
-                    result.append({"question_id":image_id, "type": type, "pred_caption":ans, "gold_caption":gold_caption_list})
+        for image_id, topk_id, topk_prob, gold_caption_list in zip(image_ids, topk_ids, topk_probs, gold_caption):
+            ans = tokenizer.decode(topk_id[0]).replace("[SEP]", "").replace("[CLS]", "").replace("[PAD]", "").strip()
+            result.append({"question_id":image_id, "pred_caption":ans, "gold_caption":gold_caption_list})   
     return result
 
 @torch.no_grad()
@@ -205,7 +193,7 @@ def main(args, config):
 
     #### Dataset ####
     print("Creating datasets")
-    datasets = create_dataset('new_semart_allcaps', config)
+    datasets = create_dataset('semart_contextual', config)
 
     # if args.distributed:
     #     num_tasks = utils.get_world_size()
@@ -221,12 +209,11 @@ def main(args, config):
 
 
     tokenizer = BertTokenizer.from_pretrained(args.text_encoder)
- 
-    tokenizer.add_special_tokens({'additional_special_tokens': ["<content>", "<form>", "<context>"]})
+
     #### Model ####
     print("Creating model")
     model = MPLUG(config=config, tokenizer=tokenizer)
-    
+
     model = model.to(device)
 
     if not args.do_two_optim:
@@ -252,34 +239,34 @@ def main(args, config):
         from apex import amp
         model, optimizer = amp.initialize(model, optimizer, opt_level="O1")
 
-    if args.checkpoint:
-        checkpoint = torch.load(args.checkpoint, map_location='cpu')
-        try:
-            state_dict = checkpoint['model']
-        except:
-            state_dict = checkpoint['module']
 
-        # reshape positional embedding to accomodate for image resolution change
-        if config["clip_name"] == "ViT-B-16":
-            num_patches = int(config["image_res"] * config["image_res"]/(16*16))
-        elif config["clip_name"] == "ViT-L-14":
-            num_patches = int(config["image_res"] * config["image_res"]/(14*14))
-        pos_embed = nn.Parameter(torch.zeros(num_patches + 1, 768).float())
-        pos_embed = resize_pos_embed(state_dict['visual_encoder.visual.positional_embedding'].unsqueeze(0),
-                                                   pos_embed.unsqueeze(0))
-        state_dict['visual_encoder.visual.positional_embedding'] = pos_embed
+    checkpoint = torch.load(args.checkpoint_dir, map_location='cpu')
+    try:
+        state_dict = checkpoint['model']
+    except:
+        state_dict = checkpoint['module']
 
-        if not args.evaluate:
-            for key in list(state_dict.keys()):
-                if ('fusion' in key or 'bert' in key) and 'decode' not in key:
-                    encoder_key = key.replace('fusion.', '').replace('bert.', '')
-                    state_dict[encoder_key] = state_dict[key]
-                    del state_dict[key]
+    # reshape positional embedding to accomodate for image resolution change
+    if config["clip_name"] == "ViT-B-16":
+        num_patches = int(config["image_res"] * config["image_res"]/(16*16))
+    elif config["clip_name"] == "ViT-L-14":
+        num_patches = int(config["image_res"] * config["image_res"]/(14*14))
+    pos_embed = nn.Parameter(torch.zeros(num_patches + 1, 768).float())
+    pos_embed = resize_pos_embed(state_dict['visual_encoder.visual.positional_embedding'].unsqueeze(0),
+                                            pos_embed.unsqueeze(0))
+    state_dict['visual_encoder.visual.positional_embedding'] = pos_embed
+
+    # if not args.evaluate:
+    #     for key in list(state_dict.keys()):
+    #         if ('fusion' in key or 'bert' in key) and 'decode' not in key:
+    #             encoder_key = key.replace('fusion.', '').replace('bert.', '')
+    #             state_dict[encoder_key] = state_dict[key]
+    #             del state_dict[key]
 
 
-        msg = model.load_state_dict(state_dict, strict=False)
-        print('load checkpoint from %s' % args.checkpoint)
-        print(msg)
+    msg = model.load_state_dict(state_dict, strict=False)
+    # print('load checkpoint from %s' % args.checkpoint)
+    # print(msg)
 
     # model_without_ddp = model
     # if args.distributed:
@@ -288,66 +275,66 @@ def main(args, config):
     #     model = apex.parallel.DistributedDataParallel(model, delay_allreduce=True)
     #     model_without_ddp = model.module
 
-    print("Start training")
-    start_time = time.time()
-    #vqa_result = evaluation(model, test_loader, tokenizer, device, config)
-    #result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch0')
+    # print("Start training")
+    # start_time = time.time()
+    vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+    result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % i)
     #if utils.is_main_process():
-    #    result = cal_metric(result_file)
+    result = cal_metric(os.path.join(args.result_dir, result_file))
     # dist.barrier()
-    wandb.watch(model)
+    # wandb.watch(model)
     
-    for epoch in range(start_epoch, max_epoch):
-        if epoch > 0:
-            lr_scheduler.step(epoch + warmup_steps)
+    # for epoch in range(start_epoch, max_epoch):
+    #     if epoch > 0:
+    #         lr_scheduler.step(epoch + warmup_steps)
 
             
-        if not args.evaluate:
-            if args.distributed:
-                train_loader.sampler.set_epoch(epoch)
+    #     if not args.evaluate:
+    #         if args.distributed:
+    #             train_loader.sampler.set_epoch(epoch)
 
-            train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler,
-                                config, do_amp=args.do_amp, do_two_optim=args.do_two_optim, accum_steps=args.accum_steps)
+    #         train_stats = train(model, train_loader, optimizer, tokenizer, epoch, warmup_steps, device, lr_scheduler,
+    #                             config, do_amp=args.do_amp, do_two_optim=args.do_two_optim, accum_steps=args.accum_steps)
 
-        if args.evaluate:
-            break
+    #     if args.evaluate:
+    #         break
 
-        vqa_result = evaluation(model, val_loader, tokenizer, device, config)
-        result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
-        if utils.is_main_process():
-            result = cal_metric(result_file)
-            log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
-                         'epoch': epoch,
-                         }
-            with open(os.path.join(args.output_dir, "log.txt"), "a") as f:
-                f.write(json.dumps(log_stats) + "\n")
+    #     vqa_result = evaluation(model, val_loader, tokenizer, device, config)
+    #     result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
+    #     if utils.is_main_process():
+    #         result = cal_metric(result_file)
+    #         log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
+    #                      'epoch': epoch,
+    #                      }
+    #         with open(os.path.join(args.output_dir, "log.txt"), "a") as f:
+    #             f.write(json.dumps(log_stats) + "\n")
 
-            torch.save({
-                'model': model.state_dict(),
-                'optimizer': optimizer.state_dict(),
-                'lr_scheduler': lr_scheduler.state_dict(),
-                'config': config,
-                'epoch': epoch,
-            }, os.path.join(args.output_dir, 'checkpoint_%02d.pth' % epoch))
+    #         torch.save({
+    #             'model': model.state_dict(),
+    #             'optimizer': optimizer.state_dict(),
+    #             'lr_scheduler': lr_scheduler.state_dict(),
+    #             'config': config,
+    #             'epoch': epoch,
+    #         }, os.path.join(args.output_dir, 'checkpoint_%02d.pth' % epoch))
 
-        # dist.barrier()
+    #     # dist.barrier()
 
-        #vqa_result = evaluation(model, test_loader, tokenizer, device, config)
-        #result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
+    #     #vqa_result = evaluation(model, test_loader, tokenizer, device, config)
+    #     #result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
 
-    total_time = time.time() - start_time
-    total_time_str = str(datetime.timedelta(seconds=int(total_time)))
-    print('Training time {}'.format(total_time_str))
+    # total_time = time.time() - start_time
+    # total_time_str = str(datetime.timedelta(seconds=int(total_time)))
+    # print('Training time {}'.format(total_time_str))
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='./configs/config.yaml')
-    parser.add_argument('--checkpoint', default='./model_checkpoint/mplug_large_v2.pth')
+    parser.add_argument('--checkpoint_dir', default='./model_checkpoint/mplug_large_v2.pth')
     parser.add_argument('--output_dir', default='./output/semart_contextual_processed')
     parser.add_argument('--evaluate', action='store_true')
-    parser.add_argument('--text_encoder', default='./bert_base_uncased')
-    parser.add_argument('--text_decoder', default='./bert_base_uncased')
+    parser.add_argument('--text_encoder', default='bert_base_uncased')
+    parser.add_argument('--text_decoder', default='bert_base_uncased')
     parser.add_argument('--device', default='cuda')
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--min_length', default=8, type=int)
@@ -369,7 +356,7 @@ if __name__ == '__main__':
     config = yaml.load(open(args.config, 'r'), Loader=yaml.Loader)
 
     args.result_dir = os.path.join(args.output_dir, 'result')
-
+    
     Path(args.output_dir).mkdir(parents=True, exist_ok=True)
     Path(args.result_dir).mkdir(parents=True, exist_ok=True)
     config["min_length"] = args.min_length

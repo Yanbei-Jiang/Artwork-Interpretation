@@ -84,25 +84,25 @@ def create_dataset(dataset, config, epoch=None):
                                     is_train=False, add_object=config['add_object'], type="contextual")
         return train_dataset, val_dataset, test_dataset
     elif dataset=='semart_visual_kg':
-        train_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/processed_semart_train.json'], './data/SemArt/embeddings_train.json', train_transform, './data/SemArt/Images',
+        train_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/processed_semart_train.json'], './data/SemArt/kg_embedding/embeddings_train.json', train_transform, './data/SemArt/Images',
                                      max_words=config['max_length'], read_local_data=config['read_local_data'],
                                      is_train=True, add_object=config['add_object'], type="visual")
-        val_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_val.json'], './data/SemArt/embeddings_val.json', test_transform, './data/SemArt/Images',
+        val_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_val.json'], './data/SemArt/kg_embedding/embeddings_val.json', test_transform, './data/SemArt/Images',
                                    max_words=config['max_length'], read_local_data=config['read_local_data'],
                                    is_train=False, add_object=config['add_object'], type="visual")
-        test_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_test.json'], './data/SemArt/embeddings_test.json', test_transform, './data/SemArt/Images',
+        test_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_test.json'], './data/SemArt/kg_embedding/embeddings_test.json', test_transform, './data/SemArt/Images',
                                     max_words=config['max_length'], read_local_data=config['read_local_data'],
                                     is_train=False, add_object=config['add_object'], type="visual")
         return train_dataset, val_dataset, test_dataset
     
     elif dataset=='semart_contextual_kg':
-        train_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/processed_semart_train.json'], './data/SemArt/embeddings_train.json', train_transform, './data/SemArt/Images',
+        train_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/processed_semart_train.json'], './data/SemArt/kg_embedding/embeddings_train.json', train_transform, './data/SemArt/Images',
                                      max_words=config['max_length'], read_local_data=config['read_local_data'],
                                      is_train=True, add_object=config['add_object'], type="contextual")
-        val_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_val.json'], './data/SemArt/embeddings_val.json', test_transform, './data/SemArt/Images',
+        val_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_val.json'], './data/SemArt/kg_embedding/embeddings_val.json', test_transform, './data/SemArt/Images',
                                    max_words=config['max_length'], read_local_data=config['read_local_data'],
                                    is_train=False, add_object=config['add_object'], type="contextual")
-        test_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_test.json'], './data/SemArt/embeddings_test.json', test_transform, './data/SemArt/Images',
+        test_dataset = sa_dataset_kg(['./data/SemArt/SemArt_two_split/semart_test.json'], './data/SemArt/kg_embedding/embeddings_test.json', test_transform, './data/SemArt/Images',
                                     max_words=config['max_length'], read_local_data=config['read_local_data'],
                                     is_train=False, add_object=config['add_object'], type="contextual")
         return train_dataset, val_dataset, test_dataset
@@ -212,13 +212,13 @@ def create_dataset(dataset, config, epoch=None):
                                     is_train=False, add_object=config['add_object'])
         return train_dataset, val_dataset, test_dataset
     elif dataset=='new_semart_allcaps_kg':
-        train_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/processed_new_semart_train.json'], './data/SemArt/embeddings_train.json', train_transform, './data/SemArt/Images',
+        train_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/processed_new_semart_train.json'], './data/SemArt/kg_embedding/embeddings_train.json', train_transform, './data/SemArt/Images',
                                      max_words=config['max_length'], read_local_data=config['read_local_data'],
                                      is_train=True, add_object=config['add_object'])
-        val_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/new_semart_val.json'], './data/SemArt/embeddings_test.json', test_transform, './data/SemArt/Images',
+        val_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/new_semart_val.json'], './data/SemArt/kg_embedding/embeddings_train.json', test_transform, './data/SemArt/Images',
                                    max_words=config['max_length'], read_local_data=config['read_local_data'],
                                    is_train=False, add_object=config['add_object'])
-        test_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/new_semart_test.json'], './data/SemArt/embeddings_test.json', test_transform, './data/SemArt/Images',
+        test_dataset = new_semart_allcaps_kg_dataset(['./data/SemArt/SemArt_three_split/new_semart_test.json'], './data/SemArt/kg_embedding/embeddings_test.json', test_transform, './data/SemArt/Images',
                                     max_words=config['max_length'], read_local_data=config['read_local_data'],
                                     is_train=False, add_object=config['add_object'])
         return train_dataset, val_dataset, test_dataset
