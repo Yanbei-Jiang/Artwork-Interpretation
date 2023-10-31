@@ -35,34 +35,38 @@ In this work, we present our novel approach, KALE, a shorthand for Knowledge-Aug
 ### Training from the start
 For Artpedia and SemArt (Visual/Contextual Split) datasets:
 
-KALE: Run ```python KALE.py```
-KALE<sub>text</sub>: Run ```python KALE_text.py```
-KALE<sub>text+KG</sub>: Run ```python KALE_text_KG.py```
+1. KALE: Run ```python KALE.py```
+2. KALE<sub>text</sub>: Run ```python KALE_text.py```
+3. KALE<sub>text+KG</sub>: Run ```python KALE_text_KG.py```
 
 Remember to change the output directory and dataset name for different datasets.
 
 For SemArt (Form/Content/Context Split) datasets:
 
-KALE: Run ```python KALE_three_split.py```
-KALE<sub>text</sub>: Run ```python KALE_text_three_split.py```
-KALE<sub>text+KG</sub>: Run ```python KALE_text_KG_three_split.py```
+1. KALE: Run ```python KALE_three_split.py```
+2. KALE<sub>text</sub>: Run ```python KALE_text_three_split.py```
+3. KALE<sub>text+KG</sub>: Run ```python KALE_text_KG_three_split.py```
 
 Remember to change the output directory and dataset name for different datasets.
 
 ### Evaluation on test set using provided checkpoints (Reproduce the results)
 For Artpedia and SemArt (Visual/Contextual Split) datasets:
 
-KALE: Run ```python test_set_evaluate.py```
-KALE<sub>text</sub>: Run ```python test_set_evaluate_text.py```
-KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_kg.py```
+1. KALE: Run ```python test_set_evaluate.py```
+
+2. KALE<sub>text</sub>: Run ```python test_set_evaluate_text.py```
+
+3. KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_kg.py```
 
 Remember to change the output directory and dataset name for different datasets.
 
 For SemArt (Form/Content/Context Split) datasets:
 
-KALE: Run ```python test_set_evaluate_three_split.py```
-KALE<sub>text</sub>: Run ```python test_set_evaluate_three_split_text.py```
-KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_three_split_kg.py```
+1. KALE: Run ```python test_set_evaluate_three_split.py```
+
+2. KALE<sub>text</sub>: Run ```python test_set_evaluate_three_split_text.py```
+
+3. KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_three_split_kg.py```
 
 Remember to change the output directory and dataset name for different datasets
 
