@@ -7,10 +7,10 @@ Repository for MCS Research Project
 
 
 ## Introduction
-In this work, we present our novel approach, KALE, a shorthand for Knowledge-Augmented vision-Language model for artwork Elaborations. In general, our model adapts an existing pre-trained vision-language model to the art domain and incorporates artwork metadata into the model through two ways: 1) as textual input, 2) through the inclusion of knowledge graph embeddings. For the first variant of the model, KALE, we use only the artwork image as input. In our second approach, KALE<sub>text, we consider using artwork metadata as the textual input. In the third variant of the model, KALE<sub>text+KG, we maintain the use of metadata as textual input while also incorporating knowledge graph embeddings into the framework.
+In this work, we present our novel approach, KALE, a shorthand for Knowledge-Augmented vision-Language model for artwork Elaborations. In general, our model adapts an existing pre-trained vision-language model to the art domain and incorporates artwork metadata into the model through two ways: 1) as textual input, 2) through the inclusion of knowledge graph embeddings. For the first variant of the model, KALE, we use only the artwork image as input. In our second approach, KALE<sub>text</sub>, we consider using artwork metadata as the textual input. In the third variant of the model, KALE<sub>text+KG</sub>, we maintain the use of metadata as textual input while also incorporating knowledge graph embeddings into the framework.
 
-<img src="mplug_framework.png" width="600"> 
-
+<img src="model_architecture1.png" width="600"> 
+<img src="model_architecture2.png" width="600"> 
 
 ## News
 
