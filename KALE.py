@@ -330,7 +330,7 @@ def main(args, config):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='./configs/config.yaml')
-    parser.add_argument('--checkpoint', default='./model_checkpoint/mplug_large_v2.pth')
+    parser.add_argument('--checkpoint', default='./checkpoint.pth')
     parser.add_argument('--output_dir', default='./output/semart_contextual_processed')
     parser.add_argument('--evaluate', action='store_true')
     parser.add_argument('--text_encoder', default='bert-base-uncased')
