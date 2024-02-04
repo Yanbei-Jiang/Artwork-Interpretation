@@ -1,16 +1,10 @@
-# Artwork-Interpretation
-Repository for MCS Research Project 
-
-# KALE: Knowledge-Augmented vision-Language model for artwork Elaborations.
-
-
-
+# KALE: An Artwork Image Captioning System Augmented with Heterogeneous Graph
 
 ## Introduction
-In this work, we present our novel approach, KALE, a shorthand for Knowledge-Augmented vision-Language model for artwork Elaborations. In general, our model adapts an existing pre-trained vision-language model to the art domain and incorporates artwork metadata into the model through two ways: 1) as textual input, 2) through the inclusion of knowledge graph embeddings. For the first variant of the model, KALE, we use only the artwork image as input. In our second approach, KALE<sub>text</sub>, we consider using artwork metadata as the textual input. In the third variant of the model, KALE<sub>text+KG</sub>, we maintain the use of metadata as textual input while also incorporating knowledge graph embeddings into the framework.
+Exploring the narratives conveyed by fine-art paintings is a challenge in image captioning, where the goal is to generate descriptions that not only precisely represent the visual content but also offer a in-depth interpretation of the artwork's meaning. The task is particularly complex for artwork images due to their diverse interpretations and varied aesthetic principles across different artistic schools and styles. In response to this, we present KALE (Knowledge-Augmented vision-Language model for artwork Elaborations), a novel approach that enhances existing vision-language models by integrating artwork metadata as additional knowledge. KALE incorporates the metadata in two ways: firstly as direct textual input, and secondly through a multimodal heterogeneous knowledge graph. To optimize the learning of graph representations, we introduce a new cross-modal alignment loss that maximizes the similarity between the image and its corresponding metadata. Experimental results demonstrate that KALE achieves strong performance over existing state-of-the-art work across several artwork datasets, particularly in achieving impressive CIDEr scores.
 
-<img src="model_architecture1.png" width="600"> 
-<img src="model_architecture2.png" width="600"> 
+<img src="figures/model_architecture1.png" width="600"> 
+<img src="figures/model_architecture2.png" width="600"> 
 
 
 ## Setup
@@ -70,6 +64,9 @@ For SemArt (Form/Content/Context Split) datasets:
 
 Remember to change the output directory and dataset name for different datasets
 
+
+## Generated Examples
+<img src="figures/examples.png" width="600">
 ### 
 ## Acknowledgement
 
