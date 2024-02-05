@@ -1,0 +1,1 @@
+{'religious': 0, 'landscape': 1, 'other': 2, 'portrait': 3, 'mythological': 4, 'genre': 5, 'interior': 6, 'still-life': 7, 'historical': 8, 'study': 9}

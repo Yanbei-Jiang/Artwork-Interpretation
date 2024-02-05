@@ -1,6 +1,5 @@
 read_local_data: True
 
-artpedia_root: 'data/Artpedia/images'
 bert_config: 'configs/config_bert.json'
 
 image_res: 336

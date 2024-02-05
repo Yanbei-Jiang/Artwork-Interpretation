@@ -14,19 +14,25 @@ Exploring the narratives conveyed by fine-art paintings is a challenge in image 
 * [PyTorch](https://pytorch.org/) version == 1.11.0
 * numpy == 1.23.5
 * python == 3.9.16
-* pytorch == 1.11.0
-* ruamel-yaml == 0.17.21
 * torchvision == 0.12.0
+* torch-scatter == 2.0.9
+* torch-geometric == 2.4.0
 * wandb
 
-### Prepare Data
+### File and Package Required
 1. Download pre-trained vision transformer [vit-l-14](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/ViT-L-14.tar). (Do not UNZIP it!!)
-2. Download dataset and unzip it to the main directory [data.zip]().
-3. Download language evaluation tool and unzip it to the main directory [language_evaluation.zip](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/language_evaluation.tar).
-4. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip]().
-5. Download training and evaluation checkpoints and unzip it to the main directory [checkpoint.pth]().
+2. Download language evaluation tool and unzip it to the main directory [language_evaluation.zip](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/language_evaluation.tar).
+3. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip](https://drive.google.com/drive/folders/1r-XbOBlfBVUqz4zIIjGhByQVZG7GrKjr?usp=drive_link).
+4. Download mPLUG pre-trained checkpoints [mplug_large_v2.pth](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/mplug_large_v2.pth).    
+5. Download heterogeneous graph with pre-trained embeddings [graph.pkl](https://drive.google.com/file/d/1IKfixHeWCzDqI2hN9N_5GHRiQbd1osNf/view?usp=drive_link).
+6. Download pre-trained FastText [cc.en.300.bin](https://drive.google.com/file/d/1IKfixHeWCzDqI2hN9N_5GHRiQbd1osNf/view?usp=drive_link).
 
-### Training from the start
+### Dataset Required
+1. Artpedia: Download Artpedia dataset and unzip the 'images' folder to the directory 'data/Artpedia/' [artpedia.zip](https://aimagelab.ing.unimore.it/imagelab/uploadedFiles/artpedia.zip).
+2. Artcaps: Download Artcaps images and unzip the 'images' folder to the directory 'data/ArtCap/' [images.zip](https://drive.google.com/drive/folders/1l8NK8mvpkG3UfrTuTNyBZciIjFquV2ia?usp=sharing).
+3. SemArt: Download SemArt dataset and unzip the 'Images' folder to the directory 'data/SemArt/' [semart.zip](https://astondr-prod.leaf.cosector.com/id/eprint/380/1/SemArt.zip).
+
+### Training
 For Artpedia and SemArt (Visual/Contextual Split) datasets:
 
 1. KALE: Run ```python KALE.py```
@@ -43,26 +49,6 @@ For SemArt (Form/Content/Context Split) datasets:
 
 Remember to change the output directory and dataset name for different datasets.
 
-### Evaluation on test set using provided checkpoints (Reproduce the results)
-For Artpedia and SemArt (Visual/Contextual Split) datasets:
-
-1. KALE: Run ```python test_set_evaluate.py```
-
-2. KALE<sub>text</sub>: Run ```python test_set_evaluate_text.py```
-
-3. KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_kg.py```
-
-Remember to change the output directory and dataset name for different datasets.
-
-For SemArt (Form/Content/Context Split) datasets:
-
-1. KALE: Run ```python test_set_evaluate_three_split.py```
-
-2. KALE<sub>text</sub>: Run ```python test_set_evaluate_three_split_text.py```
-
-3. KALE<sub>text+KG</sub>: Run ```python test_set_evaluate_three_split_kg.py```
-
-Remember to change the output directory and dataset name for different datasets
 
 
 ## Generated Examples
