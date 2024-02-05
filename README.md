@@ -20,11 +20,11 @@ Exploring the narratives conveyed by fine-art paintings is a challenge in image 
 * wandb
 
 ### Prepare Data
-1. Download pre-trained vision transformer [vit-l-14](https://drive.google.com/file/d/1W3A1pYlLPXemL7mDwDYPO8Y8IJNLAJ8e/view?usp=drive_link). (Do not UNZIP it!!)
-2. Download dataset and unzip it to the main directory [data.zip](https://drive.google.com/file/d/165HV_e4Yaw-fr8BStzXGv9lKm2iu0PL5/view?usp=drive_link).
-3. Download language evaluation tool and unzip it to the main directory [language_evaluation.zip](https://drive.google.com/file/d/1GrcLi35x3GjMVl75KHyAvUL58I9HEjPJ/view?usp=drive_link).
-4. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip](https://drive.google.com/file/d/1-y6a1Bo_F_d-bFsi0rsry0EzTQGwitLB/view?usp=drive_link).
-5. Download training and evaluation checkpoints and unzip it to the main directory [checkpoint.pth](https://drive.google.com/file/d/1wSXc6jD-mQjQWt0cM_Z3mTfO0KZD-oub/view?usp=drive_link).
+1. Download pre-trained vision transformer [vit-l-14](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/ViT-L-14.tar). (Do not UNZIP it!!)
+2. Download dataset and unzip it to the main directory [data.zip]().
+3. Download language evaluation tool and unzip it to the main directory [language_evaluation.zip](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/language_evaluation.tar).
+4. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip]().
+5. Download training and evaluation checkpoints and unzip it to the main directory [checkpoint.pth]().
 
 ### Training from the start
 For Artpedia and SemArt (Visual/Contextual Split) datasets:
@@ -66,10 +66,9 @@ Remember to change the output directory and dataset name for different datasets
 
 
 ## Generated Examples
-<img src="figures/examples.png" width="600">
-### 
-## Acknowledgement
+<img src="figures/examples.png">
 
+## Acknowledgement
 This research was supported by The University of Melbourne’s Research Computing Services and the Petascale Campus Initiative.
 
 
