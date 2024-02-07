@@ -16,20 +16,19 @@ from torch.utils.data import DataLoader
 import torch.backends.cudnn as cudnn
 import torch.distributed as dist
 
-from models.model_caption_mplug_heterogeous import MPLUG
+from models.model_caption_text import MPLUG
 from models.vit import interpolate_pos_embed, resize_pos_embed
 from models.tokenization_bert import BertTokenizer
 
 import utils
 from dataset.utils import save_result
-from dataset import create_dataset, create_sampler, create_loader, coco_collate_fn, semart_heterogeous_collate_fn
+from dataset import create_dataset, create_sampler, create_loader, coco_collate_fn
 
 from scheduler import create_scheduler
-from optim import create_optimizer, create_two_optimizer, create_two_optimizer_without_metadata
+from optim import create_optimizer, create_two_optimizer
 from tqdm import tqdm
 import wandb
-import pickle
-import ast
+
 
 def train(model, data_loader, optimizer, tokenizer, epoch, warmup_steps, device, scheduler, config, do_amp=False,
           do_two_optim=False, do_accum=False, accum_steps=1):
@@ -48,27 +47,25 @@ def train(model, data_loader, optimizer, tokenizer, epoch, warmup_steps, device,
     print_freq = 5
     step_size = 100
     warmup_iterations = warmup_steps * step_size
-    for i, (image, caption, metadata, image_ids, gold_caption, metadata_words) in enumerate(
+    for i, (image, caption, metadata, image_ids, gold_caption) in enumerate(
             metric_logger.log_every(data_loader, print_freq, header)):
         image = image.to(device, non_blocking=True)
         if config['prompt'] != "":
             caption = [config['prompt'] + each + config['eos'] for each in caption]
         else:
             caption = [each + config['eos'] for each in caption]
-        # question_input = [config['bos'] + " " + each for each in object_labels]
 
         caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length,
                             return_tensors="pt").to(device)
         metadata = tokenizer(metadata, padding='longest', truncation=True, max_length=args.max_input_length,
                                    return_tensors="pt", add_special_tokens=False).to(device)
-        # question_input = caption.input_ids[0,0].repeat(caption.input_ids.size(0), 1)
 
         if epoch > 0 or not config['warm_up']:
             alpha = config['alpha']
         else:
             alpha = config['alpha'] * min(1, i / len(data_loader))
 
-        loss = model(image, metadata, caption, metadata_words, train=True)
+        loss = model(image, metadata, caption, train=True)
 
         if accum_steps > 1:
             loss = loss / accum_steps
@@ -109,61 +106,20 @@ def evaluation(model, data_loader, tokenizer, device, config):
     result = []
 
     answer_input = None
-    for n, (image, caption, metadata, image_ids, gold_caption, metadata_words) in enumerate(
+    for n, (image, caption, metadata, image_ids, gold_caption) in enumerate(
             metric_logger.log_every(data_loader, print_freq, header)):
         image = image.to(device, non_blocking=True)
         caption = [each + config['eos'] for each in caption]
-        # question_input = [config['bos'] + " " + each for each in metadata]
         caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length,
                             return_tensors="pt").to(device)
         metadata = tokenizer(metadata, padding='longest', truncation=True, max_length=args.max_input_length,
                                    return_tensors="pt", add_special_tokens=False).to(device)
-        topk_ids, topk_probs = model(image, metadata, caption, metadata_words, train=False)
+        topk_ids, topk_probs = model(image, metadata, caption, train=False)
 
         for image_id, topk_id, topk_prob, gold_caption_list in zip(image_ids, topk_ids, topk_probs, gold_caption):
             ans = tokenizer.decode(topk_id[0]).replace("[SEP]", "").replace("[CLS]", "").replace("[PAD]", "").strip()
-            result.append({"question_id": image_id, "pred_caption": ans, "gold_caption": gold_caption_list})
+            result.append({"image_id": image_id, "pred_caption": ans, "gold_caption": gold_caption_list})
     return result
-
-
-@torch.no_grad()
-def evaluate(model, data_loader, dataset, tokenizer, device, config):
-    # test
-    model.eval()
-
-    metric_logger = utils.MetricLogger(delimiter="  ")
-
-    header = 'Evaluation:'
-    print_freq = 50
-    predicts = []
-    answers = []
-    answer_input = None
-    for n, (image, caption, image_ids, gold_caption) in enumerate(
-            metric_logger.log_every(data_loader, print_freq, header)):
-        image = image.to(device, non_blocking=True)
-        caption = [each + config['eos'] for each in caption]
-        question_input = [config['bos']] * len(caption)
-        caption = tokenizer(caption, padding='longest', truncation=True, max_length=args.max_input_length,
-                            return_tensors="pt").to(device)
-        question_input = tokenizer(question_input, padding='longest', truncation=True, max_length=args.max_input_length,
-                                   return_tensors="pt").to(device)
-
-        for i in range(len(gold_caption)):
-            predicts.append(gold_caption[i][0])
-            answers.append(gold_caption[i])
-        # {'Bleu_1': 0.9999999999863945, 'Bleu_2': 0.9999999999859791, 'Bleu_3': 0.9999999999854866, 'Bleu_4': 0.999999999984889, 'METEOR': 1.0, 'ROUGE_L': 1.0, 'CIDEr': 2.7246232035629268, 'SPICE': 0.40389416048620613}
-        result = cal_metric(predicts, answers)
-        metric_logger.meters['Bleu_1'].update(result["Bleu_1"], n=image.size(0))
-        metric_logger.meters['Bleu_2'].update(result["Bleu_1"], n=image.size(0))
-        metric_logger.meters['Bleu_3'].update(result["Bleu_1"], n=image.size(0))
-        metric_logger.meters['Bleu_4'].update(result["Bleu_1"], n=image.size(0))
-        metric_logger.meters['Bleu_1'].update(result["Bleu_1"], n=image.size(0))
-
-    # gather the stats from all processes
-    torch.cuda.empty_cache()
-    metric_logger.synchronize_between_processes()
-    print("Averaged stats:", metric_logger.global_avg())
-    return {k: "{:.4f}".format(meter.global_avg) for k, meter in metric_logger.meters.items()}
 
 
 def cal_metric(result_file):
@@ -182,7 +138,7 @@ def cal_metric(result_file):
 
 def main(args, config):
     # utils.init_distributed_mode(args)
-    wandb.init(project="artwork-interpretation", name="processed_semart_visual_text_graph")
+    wandb.init(project="artwork-interpretation", name="artpedia_metadata")
     device = torch.device(args.device)
 
     # fix the seed for reproducibility
@@ -198,28 +154,8 @@ def main(args, config):
 
     #### Dataset ####
     print("Creating datasets")
-    datasets = create_dataset('semart_visual_heterogeous', config)
+    datasets = create_dataset('artpedia', config)
 
-    
-    
-    with open('graph.pkl', 'rb') as f:
-        graph = pickle.load(f)
-    with open('./mapping/artwork2id.txt', 'r', encoding='utf-8') as file:
-        artwork_to_id = ast.literal_eval(file.read())
-    with open('./mapping/author2id.txt', 'r', encoding='utf-8') as file:
-        author_to_id = ast.literal_eval(file.read())
-    with open('./mapping/ngram2id.txt', 'r', encoding='utf-8') as file:
-        ngram_to_id = ast.literal_eval(file.read())
-    with open('./mapping/school2id.txt', 'r', encoding='utf-8') as file:
-        school_to_id = ast.literal_eval(file.read())
-    with open('./mapping/technique2id.txt', 'r', encoding='utf-8') as file:
-        technique_to_id = ast.literal_eval(file.read())
-    with open('./mapping/timeframe2id.txt', 'r', encoding='utf-8') as file:
-        timeframe_to_id = ast.literal_eval(file.read())
-    with open('./mapping/type2id.txt', 'r', encoding='utf-8') as file:
-        type_to_id = ast.literal_eval(file.read())
-    mappings = [artwork_to_id, author_to_id, ngram_to_id, technique_to_id, type_to_id, school_to_id, timeframe_to_id]
-    
     samplers = [None, None, None]
 
     train_loader, val_loader, test_loader = create_loader(datasets, samplers,
@@ -227,14 +163,14 @@ def main(args, config):
                                                                       config['batch_size_test'],
                                                                       config['batch_size_test']],
                                                           num_workers=[0, 0, 0], is_trains=[True, False, False],
-                                                          collate_fns=[semart_heterogeous_collate_fn, semart_heterogeous_collate_fn,
-                                                                       semart_heterogeous_collate_fn])
+                                                          collate_fns=[coco_collate_fn, coco_collate_fn,
+                                                                       coco_collate_fn])
 
     tokenizer = BertTokenizer.from_pretrained(args.text_encoder)
     tokenizer.add_special_tokens({'additional_special_tokens': ["<AUTHOR>", "<TITLE>", "<TECHNIQUE>", "<TYPE>", "<SCHOOL>", "<TIMEFRAME>"]})
     #### Model ####
     print("Creating model")
-    model = MPLUG(graph, mappings, config=config, tokenizer=tokenizer)
+    model = MPLUG(config=config, tokenizer=tokenizer)
 
     model = model.to(device)
 
@@ -249,7 +185,7 @@ def main(args, config):
         arg_opt['lr1'] = float(arg_opt['lr1'])
         arg_opt['lr2'] = float(arg_opt['lr2'])
         arg_opt['weight_decay'] = float(arg_opt['weight_decay'])
-        optimizer = create_two_optimizer_without_metadata(arg_opt, model)
+        optimizer = create_two_optimizer(arg_opt, model)
 
     arg_sche = utils.AttrDict(config['schedular'])
     arg_sche['lr'] = float(arg_sche['lr'])
@@ -285,20 +221,9 @@ def main(args, config):
         print('load checkpoint from %s' % args.checkpoint)
         print(msg)
 
-    # model_without_ddp = model
-    # if args.distributed:
-    #     #model = torch.nn.parallel.DistributedDataParallel(model, device_ids=[args.gpu], find_unused_parameters=True)
-    #     import apex
-    #     model = apex.parallel.DistributedDataParallel(model, delay_allreduce=True)
-    #     model_without_ddp = model.module
-
     print("Start training")
     start_time = time.time()
-    # vqa_result = evaluation(model, test_loader, tokenizer, device, config)
-    # result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch10')
-    # if utils.is_main_process():
-    #    result = cal_metric(os.path.join(args.result_dir, 'vqa_result_epoch10_rank0.json'))
-    # dist.barrier()
+
     wandb.watch(model)
 
     for epoch in range(start_epoch, max_epoch):
@@ -316,8 +241,8 @@ def main(args, config):
         if args.evaluate:
             break
 
-        vqa_result = evaluation(model, test_loader, tokenizer, device, config)
-        result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
+        result = evaluation(model, test_loader, tokenizer, device, config)
+        result_file = save_result(result, args.result_dir, 'result_epoch%d' % epoch)
         if utils.is_main_process():
             result = cal_metric(result_file)
             log_stats = {**{f'train_{k}': v for k, v in train_stats.items()},
@@ -334,11 +259,6 @@ def main(args, config):
                 'epoch': epoch,
             }, os.path.join(args.output_dir, 'checkpoint_%02d.pth' % epoch))
 
-        # dist.barrier()
-
-        # vqa_result = evaluation(model, test_loader, tokenizer, device, config)
-        # result_file = save_result(vqa_result, args.result_dir, 'vqa_result_epoch%d' % epoch)
-
     total_time = time.time() - start_time
     total_time_str = str(datetime.timedelta(seconds=int(total_time)))
     print('Training time {}'.format(total_time_str))
@@ -346,12 +266,12 @@ def main(args, config):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--config', default='./configs/caption_mplug_large.yaml')
+    parser.add_argument('--config', default='./configs/config.yaml')
     parser.add_argument('--checkpoint', default='mplug_large_v2.pth')
-    parser.add_argument('--output_dir', default='/data/gpfs/projects/punim1996/model_checkpoint/semart_visual_text_graph')
+    parser.add_argument('--output_dir', default='./output/artpedia_metadata')
     parser.add_argument('--evaluate', action='store_true')
-    parser.add_argument('--text_encoder', default='/home/yanbeij/mcs-research-project/bert_base_uncased')
-    parser.add_argument('--text_decoder', default='/home/yanbeij/mcs-research-project/bert_base_uncased')
+    parser.add_argument('--text_encoder', default='./bert_base_uncased')
+    parser.add_argument('--text_decoder', default='./bert_base_uncased')
     parser.add_argument('--device', default='cuda')
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--min_length', default=8, type=int)

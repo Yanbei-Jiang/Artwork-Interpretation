@@ -103,9 +103,7 @@ class MPLUG(nn.Module):
 
         self.fasttext = FastText.load_fasttext_format("cc.en.300.bin")
         
-    def forward(self, image, question, answer=None, metadata_words=None, train=True, out_size=5, scst=False):
-        if(scst):
-            return self.beam_search(image, question, answer, train=True,out_size=out_size)
+    def forward(self, image, metadata, caption=None, metadata_words=None, train=True, out_size=5, scst=False):
         image = image.to(dtype=next(self.parameters()).dtype) 
         image_embeds = self.visual_encoder.visual(image, skip_last_layer=True, use_checkpoint=self.use_checkpoint)
         if self.large:
@@ -113,20 +111,82 @@ class MPLUG(nn.Module):
         image_atts = torch.ones(image_embeds.size()[:-1],dtype=torch.long).to(image.device)
         
         if train:               
-            answer_targets = answer.input_ids.masked_fill(answer.input_ids == self.tokenizer.pad_token_id, -100)      
+            caption_targets = caption.input_ids.masked_fill(caption.input_ids == self.tokenizer.pad_token_id, -100)      
             
             target_values = torch.tensor([4,5,6,7,8,9]).to(image.device)
-            indices = torch.isin(question.input_ids, target_values).to(image.device)
+            indices = torch.isin(metadata.input_ids, target_values).to(image.device)
             indices = torch.nonzero(indices, as_tuple=False)[:, 1].to(image.device)
-            indices = indices.view(question.input_ids.size(0), target_values.size(0)).to(image.device)
+            indices = indices.view(metadata.input_ids.size(0), target_values.size(0)).to(image.device)
             
-            text_output = self.text_encoder(question.input_ids, attention_mask=question.attention_mask, return_dict=True)
+            text_output = self.text_encoder(metadata.input_ids, attention_mask=metadata.attention_mask, return_dict=True)
             text_embeds = text_output.last_hidden_state
             
             text_embeds = text_embeds[torch.arange(text_embeds.size(0)).unsqueeze(1), indices, :].to(image.device)
-            new_attention_mask = question.attention_mask[torch.arange(question.attention_mask.size(0)).unsqueeze(1), indices].to(image.device)
+            new_attention_mask = metadata.attention_mask[torch.arange(metadata.attention_mask.size(0)).unsqueeze(1), indices].to(image.device)
+
+            extracted_embeddings_tensor = self.graph_encoder(self.graph, self.metadata_words, train=True)
             
-            graph_embeds = self.han_model(self.graph.x_dict, self.graph.edge_index_dict)
+            fusion_embeddings = torch.cat([text_embeds, extracted_embeddings_tensor], 1)
+
+            fusion_attention_mask = torch.ones(fusion_embeddings.size()[:-1], dtype=torch.long).to(image.device)
+            
+            fusion_output = self.fusion_encoder(encoder_embeds = fusion_embeddings, 
+                                                attention_mask = fusion_attention_mask, 
+                                                encoder_hidden_states = image_embeds,
+                                                encoder_attention_mask = image_atts, return_dict=False)
+            
+            image_output, metadata_output = fusion_output
+            
+            metadata_output = torch.cat([image_output, metadata_output], 1)
+            merge_text_attention = torch.cat([image_atts, fusion_attention_mask], 1)
+            caption_output = self.text_decoder(caption.input_ids, 
+                                                  attention_mask = caption.attention_mask, 
+                                                  encoder_hidden_states = metadata_output,
+                                                  encoder_attention_mask = merge_text_attention,                  
+                                                  labels = caption_targets,
+                                                  return_dict = True,   
+                                                  reduction = 'none',
+                                                 )                      
+            loss = caption_output.loss         
+            metadata_image_loss = self.loss_module(extracted_embeddings_tensor[:, 1:, :], image_embeds)
+            combined_loss = 0.8*loss + (1-0.8)*metadata_image_loss
+            return combined_loss
+            
+
+        else: 
+            target_values = torch.tensor([4,5,6,7,8,9]).to(image.device)
+            indices = torch.isin(metadata.input_ids, target_values).to(image.device)
+            indices = torch.nonzero(indices, as_tuple=False)[:, 1].to(image.device)
+            indices = indices.view(metadata.input_ids.size(0), target_values.size(0)).to(image.device)
+            
+            text_output = self.text_encoder(metadata.input_ids, attention_mask=metadata.attention_mask,
+                                                return_dict=True)
+            text_embeds = text_output.last_hidden_state
+            text_embeds = text_embeds[torch.arange(text_embeds.size(0)).unsqueeze(1), indices, :].to(image.device)
+            new_attention_mask = metadata.attention_mask[torch.arange(metadata.attention_mask.size(0)).unsqueeze(1), indices].to(image.device)
+            
+            # batch_size*12*768
+            extracted_embeddings_tensor = self.graph_encoder(self.graph, self.metadata_words, train=False)
+
+            fusion_embeddings = torch.cat([text_embeds, extracted_embeddings_tensor], 1)
+
+            fusion_attention_mask = torch.ones(fusion_embeddings.size()[:-1], dtype=torch.long).to(image.device)
+            
+            fusion_output = self.fusion_encoder(encoder_embeds=fusion_embeddings, 
+                                                attention_mask = fusion_attention_mask, 
+                                                encoder_hidden_states = image_embeds,
+                                                encoder_attention_mask = image_atts,                             
+                                                return_dict = False) 
+            image_output, metadata_output = fusion_output 
+            metadata_output = torch.cat([image_output, metadata_output], 1)
+            merge_text_attention = torch.cat([image_atts, fusion_attention_mask], 1)
+
+            topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context = self.generation(metadata_output, merge_text_attention) 
+            return topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context
+
+    def graph_encoder(graph, metadata_words, train):
+        if train:
+            graph_embeds = self.han_model(graph.x_dict, graph.edge_index_dict)
 
             extracted_embeddings_tensor = []
             for metadata_word in metadata_words:
@@ -182,48 +242,10 @@ class MPLUG(nn.Module):
                 extracted_embeddings_tensor.append(torch.stack(extracted_embeddings))
 
             # batch_size*12*768
-            extracted_embeddings_tensor = torch.stack(extracted_embeddings_tensor).to(image.device)
-            fusion_embeddings = torch.cat([text_embeds, extracted_embeddings_tensor], 1)
-
-            fusion_attention_mask = torch.ones(fusion_embeddings.size()[:-1], dtype=torch.long).to(image.device)
+            return torch.stack(extracted_embeddings_tensor).to(image.device)
+        else:
             
-            fusion_output = self.fusion_encoder(encoder_embeds = fusion_embeddings, 
-                                                attention_mask = fusion_attention_mask, 
-                                                encoder_hidden_states = image_embeds,
-                                                encoder_attention_mask = image_atts, return_dict=False)
-            
-            image_output, question_output = fusion_output
-            
-            question_output = torch.cat([image_output, question_output], 1)
-            merge_text_attention = torch.cat([image_atts, fusion_attention_mask], 1)
-            answer_output = self.text_decoder(answer.input_ids, 
-                                                  attention_mask = answer.attention_mask, 
-                                                  encoder_hidden_states = question_output,
-                                                  encoder_attention_mask = merge_text_attention,                  
-                                                  labels = answer_targets,
-                                                  return_dict = True,   
-                                                  reduction = 'none',
-                                                 )                      
-            loss = answer_output.loss         
-            metadata_image_loss = self.loss_module(extracted_embeddings_tensor[:, 1:, :], image_embeds)
-            combined_loss = 0.8*loss + (1-0.8)*metadata_image_loss
-            return combined_loss
-            
-
-        else: 
-            target_values = torch.tensor([4,5,6,7,8,9]).to(image.device)
-            indices = torch.isin(question.input_ids, target_values).to(image.device)
-            indices = torch.nonzero(indices, as_tuple=False)[:, 1].to(image.device)
-            indices = indices.view(question.input_ids.size(0), target_values.size(0)).to(image.device)
-            
-            text_output = self.text_encoder(question.input_ids, attention_mask=question.attention_mask,
-                                                return_dict=True)
-            text_embeds = text_output.last_hidden_state
-            text_embeds = text_embeds[torch.arange(text_embeds.size(0)).unsqueeze(1), indices, :].to(image.device)
-            new_attention_mask = question.attention_mask[torch.arange(question.attention_mask.size(0)).unsqueeze(1), indices].to(image.device)
-            
-            graph_embeds = self.han_model(self.graph.x_dict, self.graph.edge_index_dict)
-
+            graph_embeds = self.han_model(graph.x_dict, graph.edge_index_dict)
             extracted_embeddings_tensor = []
             for metadata_word in metadata_words:
                 extracted_embeddings = []
@@ -282,7 +304,6 @@ class MPLUG(nn.Module):
                                 flag = 1
                                 break
                         if flag == 0:
-                            
                             if metadata_name == "author":
                                 transformed_embedding = torch.tensor(self.fasttext.wv[metadata]).to(image.device)
                                 extracted_embeddings.append(self.han_model.author_transform(transformed_embedding))
@@ -298,27 +319,10 @@ class MPLUG(nn.Module):
                 extracted_embeddings_tensor.append(torch.stack(extracted_embeddings))
 
             # batch_size*12*768
-            extracted_embeddings_tensor = torch.stack(extracted_embeddings_tensor)
-            fusion_embeddings = torch.cat([text_embeds, extracted_embeddings_tensor], 1)
+            return torch.stack(extracted_embeddings_tensor).to(image.device)
 
-            fusion_attention_mask = torch.ones(fusion_embeddings.size()[:-1], dtype=torch.long).to(image.device)
-            
-            fusion_output = self.fusion_encoder(encoder_embeds=fusion_embeddings, 
-                                                attention_mask = fusion_attention_mask, 
-                                                encoder_hidden_states = image_embeds,
-                                                encoder_attention_mask = image_atts,                             
-                                                return_dict = False) 
-            image_output, question_output = fusion_output 
-            question_output = torch.cat([image_output, question_output], 1)
-            merge_text_attention = torch.cat([image_atts, fusion_attention_mask], 1)
-
-            topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context = self.generation(question_output, merge_text_attention) 
-            return topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context
 
     def module_setting(self, config):
-        # text encoder = 前6层bert
-        # encoder主体cross-modal skip-connected network = 后6层bert = encoder的num_hidden_layers
-        #
         self.config_encoder = BertConfig.from_json_file(config['bert_config'])   
         self.config_encoder.num_hidden_layers = self.config_encoder.text_encoder_layers
         self.config_fusion = BertConfig.from_json_file(config['bert_config'])   
@@ -334,14 +338,6 @@ class MPLUG(nn.Module):
         self.use_checkpoint = config["use_checkpoint"] if "use_checkpoint" in config else True
         print("use_checkpoint: ", self.use_checkpoint)
 
-    def beam_search(self, image, question, answer=None, train=True, out_size=5):
-        image_embeds = self.visual_encoder.visual(image, skip_last_layer=True)
-        if self.large:
-            image_embeds = self.dropout(self.visn_layer_norm(self.visn_fc(image_embeds)))
-        image_atts = torch.ones(image_embeds.size()[:-1],dtype=torch.long).to(image.device)
-        topk_ids, topk_probs = self.generation(image_embeds, image_atts, out_size=out_size) 
-
-        return topk_ids, topk_probs
     @torch.no_grad()    
     def copy_params(self):
         for model_pair in self.model_pairs:           
@@ -349,83 +345,16 @@ class MPLUG(nn.Module):
                 param_m.data.copy_(param.data)  # initialize
                 param_m.requires_grad = False  # not update by gradient    
 
-            
     @torch.no_grad()        
     def _momentum_update(self):
         for model_pair in self.model_pairs:           
             for param, param_m in zip(model_pair[0].parameters(), model_pair[1].parameters()):
                 param_m.data = param_m.data * self.momentum + param.data * (1. - self.momentum)
                 
-    def generation(self, question_states, question_atts, out_size=1):
-        encoder_inputs = [question_states, question_atts]
+    def generation(self, states, atts, out_size=1):
+        encoder_inputs = [states, atts]
         topk_ids_content, topk_probs_content = self.beam_generator.translate_batch_scst(encoder_inputs,out_size=out_size, new_semart=True, type="content")
         topk_ids_form, topk_probs_form = self.beam_generator.translate_batch_scst(encoder_inputs,out_size=out_size, new_semart=True, type="form") 
         topk_ids_context, topk_probs_context = self.beam_generator.translate_batch_scst(encoder_inputs,out_size=out_size, new_semart=True, type="context")   
         return topk_ids_content, topk_probs_content, topk_ids_form, topk_probs_form, topk_ids_context, topk_probs_context
 
-    def rank_answer(self, question_states, question_atts, answer_ids, answer_atts, k):
-        
-        num_ques = question_states.size(0)
-        start_ids = answer_ids[0,0].repeat(num_ques,1) # bos token
-        
-        start_output = self.text_decoder(start_ids, 
-                                         encoder_hidden_states = question_states,
-                                         encoder_attention_mask = question_atts,                                      
-                                         return_dict = True,
-                                         reduction = 'none')              
-        logits = start_output.logits[:,0,:] # first token's logit
-        
-        # topk_probs: top-k probability 
-        # topk_ids: [num_question, k]        
-        answer_first_token = answer_ids[:,1]
-        prob_first_token = F.softmax(logits,dim=1).index_select(dim=1, index=answer_first_token) 
-        topk_probs, topk_ids = prob_first_token.topk(k,dim=1) 
-        
-        # answer input: [num_question*k, answer_len]                 
-        input_ids = []
-        input_atts = []
-        for b, topk_id in enumerate(topk_ids):
-            input_ids.append(answer_ids.index_select(dim=0, index=topk_id))
-            input_atts.append(answer_atts.index_select(dim=0, index=topk_id))
-        input_ids = torch.cat(input_ids,dim=0)  
-        input_atts = torch.cat(input_atts,dim=0)  
-
-        targets_ids = input_ids.masked_fill(input_ids == self.tokenizer.pad_token_id, -100)
-
-        # repeat encoder's output for top-k answers
-        question_states = tile(question_states, 0, k)
-        question_atts = tile(question_atts, 0, k)
-        
-        output = self.text_decoder(input_ids, 
-                                   attention_mask = input_atts, 
-                                   encoder_hidden_states = question_states,
-                                   encoder_attention_mask = question_atts,     
-                                   labels = targets_ids,
-                                   return_dict = True, 
-                                   reduction = 'none')                 
-
-        answer_loss = output.loss 
-        answer_loss = answer_loss.view(input_ids.size(0),-1)
-        
-        # topk_prob: first token probability
-        topk_probs = topk_probs.view(-1,1)
-        log_probs = torch.cat([topk_probs.log(), -answer_loss],dim=1)
-
-        # re-calculate log probabilities for the answer sequences using chain rule
-        log_probs_sum = log_probs.sum(1)
-        log_probs_sum = log_probs_sum.view(num_ques,k)
-
-        topk_probs = F.softmax(log_probs_sum, dim=-1)
-        # get top-k after re-ranking
-        topk_probs, rerank_id = topk_probs.topk(k,dim=1) 
-        topk_ids = torch.gather(topk_ids, 1, rerank_id)    
-
-        return topk_ids, topk_probs
-    
-def tile(x, dim, n_tile):
-    init_dim = x.size(dim)
-    repeat_idx = [1] * x.dim()
-    repeat_idx[dim] = n_tile
-    x = x.repeat(*(repeat_idx))
-    order_index = torch.LongTensor(np.concatenate([init_dim * np.arange(n_tile) + i for i in range(init_dim)]))
-    return torch.index_select(x, dim, order_index.to(x.device))    

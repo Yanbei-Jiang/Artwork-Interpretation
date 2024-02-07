@@ -1,4 +1,5 @@
 # KALE: An Artwork Image Captioning System Augmented with Heterogeneous Graph
+Repository: https://github.com/Yanbei-Jiang/Artwork-Interpretation
 
 ## Introduction
 Exploring the narratives conveyed by fine-art paintings is a challenge in image captioning, where the goal is to generate descriptions that not only precisely represent the visual content but also offer a in-depth interpretation of the artwork's meaning. The task is particularly complex for artwork images due to their diverse interpretations and varied aesthetic principles across different artistic schools and styles. In response to this, we present KALE (Knowledge-Augmented vision-Language model for artwork Elaborations), a novel approach that enhances existing vision-language models by integrating artwork metadata as additional knowledge. KALE incorporates the metadata in two ways: firstly as direct textual input, and secondly through a multimodal heterogeneous knowledge graph. To optimize the learning of graph representations, we introduce a new cross-modal alignment loss that maximizes the similarity between the image and its corresponding metadata. Experimental results demonstrate that KALE achieves strong performance over existing state-of-the-art work across several artwork datasets, particularly in achieving impressive CIDEr scores.
@@ -25,29 +26,31 @@ Exploring the narratives conveyed by fine-art paintings is a challenge in image 
 3. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip](https://drive.google.com/drive/folders/1r-XbOBlfBVUqz4zIIjGhByQVZG7GrKjr?usp=drive_link).
 4. Download mPLUG pre-trained checkpoints [mplug_large_v2.pth](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/mplug_large_v2.pth).    
 5. Download heterogeneous graph with pre-trained embeddings [graph.pkl](https://drive.google.com/file/d/1IKfixHeWCzDqI2hN9N_5GHRiQbd1osNf/view?usp=drive_link).
-6. Download pre-trained FastText [cc.en.300.bin](https://drive.google.com/file/d/1IKfixHeWCzDqI2hN9N_5GHRiQbd1osNf/view?usp=drive_link).
+6. Download pre-trained FastText and unzip it to the main directory [cc.en.300.bin](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz).
+7. Download dataset annotation files and unzip it to the main directory [data.zip](https://drive.google.com/file/d/1Yv5iCcM_mlTyTNSZWNe0ssN5u-apsYsf/view?usp=drive_link).
 
-### Dataset Required
+### Dataset Images Required
 1. Artpedia: Download Artpedia dataset and unzip the 'images' folder to the directory 'data/Artpedia/' [artpedia.zip](https://aimagelab.ing.unimore.it/imagelab/uploadedFiles/artpedia.zip).
 2. Artcaps: Download Artcaps images and unzip the 'images' folder to the directory 'data/ArtCap/' [images.zip](https://drive.google.com/drive/folders/1l8NK8mvpkG3UfrTuTNyBZciIjFquV2ia?usp=sharing).
 3. SemArt: Download SemArt dataset and unzip the 'Images' folder to the directory 'data/SemArt/' [semart.zip](https://astondr-prod.leaf.cosector.com/id/eprint/380/1/SemArt.zip).
 
 ### Training
-For Artpedia and SemArt (Visual/Contextual Split) datasets:
+For ArtCap dataset:
+1. KALE (without metadata): Run ```python KALE_artcap.py```
 
-1. KALE: Run ```python KALE.py```
-2. KALE<sub>text</sub>: Run ```python KALE_text.py```
-3. KALE<sub>text+KG</sub>: Run ```python KALE_text_KG.py```
+For Artpedia dataset:
+1. KALE (without metadata): Run ```python KALE_artpedia.py```
+2. KALE (with metadata): Run ```python KALE_metadata_artpedia.py```
 
-Remember to change the output directory and dataset name for different datasets.
+For SemArt v1.0 (Visual/Contextual Split) datasets:
+1. KALE (without metadata): Run ```python KALE_semart1.py```
+2. KALE (with metadata): Run ```python KALE_metadata_semart1.py```
 
-For SemArt (Form/Content/Context Split) datasets:
+For SemArt v2.0 (Form/Content/Context Split) datasets:
+1. KALE (without metadata): Run ```python KALE_semart2.py```
+2. KALE (with metadata): Run ```python KALE_metadata_semart2.py```
 
-1. KALE: Run ```python KALE_three_split.py```
-2. KALE<sub>text</sub>: Run ```python KALE_text_three_split.py```
-3. KALE<sub>text+KG</sub>: Run ```python KALE_text_KG_three_split.py```
 
-Remember to change the output directory and dataset name for different datasets.
 
 
 
