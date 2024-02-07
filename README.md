@@ -1,5 +1,4 @@
 # KALE: An Artwork Image Captioning System Augmented with Heterogeneous Graph
-Repository: https://github.com/Yanbei-Jiang/Artwork-Interpretation
 
 ## Introduction
 Exploring the narratives conveyed by fine-art paintings is a challenge in image captioning, where the goal is to generate descriptions that not only precisely represent the visual content but also offer a in-depth interpretation of the artwork's meaning. The task is particularly complex for artwork images due to their diverse interpretations and varied aesthetic principles across different artistic schools and styles. In response to this, we present KALE (Knowledge-Augmented vision-Language model for artwork Elaborations), a novel approach that enhances existing vision-language models by integrating artwork metadata as additional knowledge. KALE incorporates the metadata in two ways: firstly as direct textual input, and secondly through a multimodal heterogeneous knowledge graph. To optimize the learning of graph representations, we introduce a new cross-modal alignment loss that maximizes the similarity between the image and its corresponding metadata. Experimental results demonstrate that KALE achieves strong performance over existing state-of-the-art work across several artwork datasets, particularly in achieving impressive CIDEr scores.
@@ -51,13 +50,9 @@ For SemArt v2.0 (Form/Content/Context Split) datasets:
 2. KALE (with metadata): Run ```python KALE_metadata_semart2.py```
 
 
-
-
-
 ## Generated Examples
 <img src="figures/examples.png">
 
-## Acknowledgement
-This research was supported by The University of Melbourne’s Research Computing Services and the Petascale Campus Initiative.
+
 
 
