@@ -22,11 +22,11 @@ Exploring the narratives conveyed by fine-art paintings is a challenge in image 
 ### File and Package Required
 1. Download pre-trained vision transformer [vit-l-14](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/ViT-L-14.tar). (Do not UNZIP it!!)
 2. Download language evaluation tool and unzip it to the main directory [language_evaluation.zip](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/language_evaluation.tar).
-3. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip](https://drive.google.com/drive/folders/1r-XbOBlfBVUqz4zIIjGhByQVZG7GrKjr?usp=drive_link).
+3. Download bert_base_uncased and unzip it to the main directory [bert_base_uncased.zip](https://drive.google.com/file/d/1MZs0qMAYBPcSONu3SU1kjdGDd2JGVkub/view?usp=drive_link).
 4. Download mPLUG pre-trained checkpoints [mplug_large_v2.pth](https://alice-open.oss-cn-zhangjiakou.aliyuncs.com/mPLUG/mplug_large_v2.pth).    
-5. Download heterogeneous graph with pre-trained embeddings [graph.pkl](https://drive.google.com/file/d/1IKfixHeWCzDqI2hN9N_5GHRiQbd1osNf/view?usp=drive_link).
+5. Download heterogeneous graph with pre-trained embeddings [graph.pkl](https://drive.google.com/file/d/18AnTibBPGV2Wz6JwFPt48PtDSok-jRWH/view?usp=drive_link).
 6. Download pre-trained FastText and unzip it to the main directory [cc.en.300.bin](https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.en.300.bin.gz).
-7. Download dataset annotation files and unzip it to the main directory [data.zip](https://drive.google.com/file/d/1Yv5iCcM_mlTyTNSZWNe0ssN5u-apsYsf/view?usp=drive_link).
+7. Download dataset annotation files and unzip it to the main directory [data.zip](https://drive.google.com/file/d/13EQA0yNRB1sPEvg9nYSonhiPc1TbiLGu/view?usp=drive_link).
 
 ### Dataset Images Required
 1. Artpedia: Download Artpedia dataset and unzip the 'images' folder to the directory 'data/Artpedia/' [artpedia.zip](https://aimagelab.ing.unimore.it/imagelab/uploadedFiles/artpedia.zip).
